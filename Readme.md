@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Селиванов](https://up.htmlacademy.ru/adaptive/10/user/184136).
-* Наставник: [Дмитрий Безуглый].
+* Наставник: [Дмитрий Безуглый] (https://github.com/shalfey41).
 
 ---
 
