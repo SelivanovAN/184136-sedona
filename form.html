@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+          <img src="#" width="50" height="50" alt="City of Sedona">
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toogle" type="button">Закрыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="#">Фото и видео</a></li>
+            <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="#">html academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="comment">
+      <img src="#" width="50" height="50" alt="Гора">
+      <h2 class="comment__title  comment__title--title">оставьте свой отзыв</h2>
+      <p class="comment__about  comment__about--about">помогите нашим отелям стать лучше оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+    <section class="information">
+      <form class="information-items"action="https://echo.htmlacademy.ru" method="get">
+        <div class="information-item__introduce">
+          <h2 class="">представтесь:</h2>
+          <label class="" for="name">имя<sup>*</sup></label>
+          <input class="" type="text" name="name" id="name">
+          <label class="" for="surname">фамилия<sup>*<sup></label>
+          <input class="" type="text" name="surname" id="surname">
+          <label class="" for="patronymic">отчество</label>
+          <input class="" type="text" name="patronymic" id="patronymic">
+        </div>
+        <div class="information-item__contact">
+          <h2 class="">контактная информация:</h2>
+          <label class="" for="tel">контактный телефон<sup>*</sup></label>
+          <input type="text" type="text" name="tel" id="tel">
+          <img src="#" width="30" height="30" alt="Телефон">
+          <span>Ошибка, перепроверьте номер</span>
+          <label class="" for="email">электронная почта<sup>*</sup></label>
+          <input class="" type="email" name="email" id="email">
+          <img src="#" width="30" height="30" alt="Почта">
+        </div>
+        <div class="information-item__impression">
+          <h2 class="">ваше общее впечатление:</h2>
+          <input class="" type="radio" name="impression" id="good" checked><label class="" for="good">Скорее положительное</label>
+          <input class="" type="radio" name="impression" id="bad"><label class="" for="bad">Скорее отрицательное</label>
+          <input class="" type="radio" name="impression" id="50"><label class="" for="50">Затрудняюсь ответить</label>
+        </div>
+        <div class="information-item__visited">
+          <h2 class="">посещенные достопримечательности:</h2>
+          <input class="" type="checkbox" name="visited" id="bridge" checked><label class="" for="brodge">Мост Дьявола</label>
+          <input class="" type="checkbox" name="visited" id="park" checked><label class="" for="park">Слайд-парк</label>
+          <input class="" type="checkbox" name="visited" id="hill"><label class="" for="hill">Гора-Колокол</label>
+          <input class="" type="checkbox" name="visited" id="rock" checked><label class="" for="rock">Красные скалы</label>
+        </div>
+        <div class="information-item__emotions">
+          <h2 class="">опишите свои эмоции:</h2>
+          <textarea rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+        <button class="" type="button" value="Отправить отзыв">Отправить отзыв</button>
+      </form>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__wraper">
+        <section class="page-footer__visitsedona">
+          <a href="#">#visitsedona</a>
+        </section>
+        <section class="page-footer__social">
+          <span class="social-links">
+            <a class="social-link  social-link--tv" href="https://twitter.com/">Твиттер</a>
+            <a class="social-link  social-link--fb" href="https://facebook.com">Фейсбук</a>
+            <a class="social-link  social-link--yb" href="https://www.youtube.com/">Ютуб</a>
+          </span>
+        </section>
+        <section>
+          <p>Разработано<a href="#"><img src="#" width="50" height="50" alt="Эмблема HTML Academy"></a></p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
