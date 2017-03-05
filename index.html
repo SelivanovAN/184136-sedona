@@ -6,79 +6,92 @@
   </head>
   <body>
     <header class="page-header">
+      <button class="page-header__close" type="button">Закрыть меню</button>
       <div class="page-header__logo">
-          <img src="#" width="50" height="50" alt="City of Sedona">
+          <img src="#" width="50" height="50" alt="Город седона">
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toogle" type="button">Закрыть меню</button>
+        <button class="main-nav__toogle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фото и видео</a></li>
-            <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="#">html academy</a></li>
+            <li class="main-nav__item"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="./photo.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a href="./form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">html academy</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <section class="intro">
-      <span class="intro__call">welcome</span>
-      <span class="intro__place">to the gargeous</span>
-      <img src="#" width="50" height="50" alt="Гора">
-      <cite>"Because the Grand Canuon sucks!"</cite>
-      <p>Седона - небольшой городок в Аризоне, заслуживающий большего</p>
-      <p>Рассмотрим 5 причин, по которым седона крче чем Гранд Каньон!</p>
-    </section>
     <section class="advantages">
-      <div class="advantages-sity">
-        <h2 class="advantages-sity__title  advantages-sity__title--title">настоящий городок</h2>
-        <span>- № 1 -</span>
-        <p class="advantages-sity__about  advantages-sity__about--about">седона не аттракцион для туристов, там течет своя жизнь</p>
-        <img src="#" width="50" height="50" alt="Отель">
-      </div>
-      <div class="advantages-comfort">
-        <h2 class="advantages-comfort__title  advantages-comfort__title--title">жилье</h2>
-        <p class="advantages-comfort__about  advantages-comfort__about--about">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-      </div>
-      <div class="advantages-comfort">
-        <h2 class="advantages-comfort__title  advantages-comfort__title--title">сувениры</h2>
-        <p class="advantages-comfort__about  advantages-comfort__about--about">не только китайского, но и местного производства!</p>
-      </div>
-      <div class="advantages-comfort">
-        <h2 class="advantages-comfort__title  advantages-comfort__title--title">еда</h2>
-        <p class="advantages-comfort__about  advantages-comfort__about--about">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      <div class="advantages__wraper">
+        <div class="advantages-intro">
+          <h2 class="advantages-intro__title  advantages-intro--big">Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
+          <p class="advantages-intro__about  advantages-intro--big">Рассмотрим 5 причин, по которым седона крче чем Гранд Каньон!</p>
+        </div>
+        <div class="advantages-sity">
+          <h2 class="advantages-sity__title  advantages-sity__title--big">Настоящий городок</h2>
+          <span class="advantages-sity__number  advantages-sity__number--big">- № 1 -</span>
+          <p class="advantages-sity__about  advantages-sity__about--big">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="advantages-sity__image">
+            <img src="img/advantages_sity_image.jpg" width="320" height="260" alt="Отель">
+          </div>
+        </div>
+        <div class="advantages-comfort">
+          <h2 class="advantages-comfort__title  advantages-comfort__title--big">Жилье</h2>
+          <p class="advantages-comfort__about  advantages-comfort__about--big">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="advantages-comfort">
+          <h2 class="advantages-comfort__title  advantages-comfort__title--big">Сувениры</h2>
+          <p class="advantages-comfort__about  advantages-comfort__about--big">Не только китайского, но и местного производства!</p>
+        </div>
+        <div class="advantages-comfort">
+          <h2 class="advantages-comfort__title  advantages-comfort__title--big">Еда</h2>
+          <p class="advantages-comfort__about  advantages-comfort__about--big">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
       </div>
     </section>
     <section class="bridge">
-      <h2 class="bridge__title  bridget__title--title">там есть мост дьявола</h2>
-      <span>- № 2 -</span>
-      <p class="bridge__about  bridge__about--about">да, по нему можно пройти! если вы осмелитесь, конечно</p>
-      <img src="#" width="50" height="50" alt="Отель">
+      <div class="bridge__wraper">
+        <h2 class="bridge__title  bridget__title--big">Там есть мост дьявола</h2>
+        <span class="bridge__number  bridge__number--big">- № 2 -</span>
+        <p class="bridge__about  bridge__about--big">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
+        <div class="bridge__image">
+          <img src="img/bridge_image.jpg" width="320" height="260" alt="Отель">
+        </div>
+      </div>
     </section>
-    <section>
-      <div class="area">
-        <h2 class="area__title  area__title-title">небольшая площадь</h2>
-        <span>- № 3 -</span>
-        <p class="area__about  area__about--about">все достопримечательности находятся очень близко</p>
-      </div>
-      <div class="road">
-        <h2 class="road__title  road__title--title">красивая дорога</h2>
-        <span>- № 4 -</span>
-        <p class="road__about  road__about--about">ехать в седону из лас-вегаса совсем не скучно!</p>
-      </div>
-      <div class="tourists">
-        <h2 class="tourists__title  tourists__title--title">мало туристов</h2>
-        <span>- № 5 -</span>
-        <p class="tourists__about  tourists__about--about">большинство едет в гранд каньон и толпится там</p>
+    <section class="excellence">
+      <div class="excellence__wraper">
+        <div class="excellence-area">
+          <h2 class="excellence-area__title  excellence-area__title--big">Небольшая площадь</h2>
+          <span class="excellence-area__number  excellence-area__number--big">- № 3 -</span>
+          <p class="excellence-area__about  excellence-area__about--big">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="excellence-road">
+          <h2 class="excellence-road__title  excellence-road__title--big">Красивая дорога</h2>
+          <span class="excellence-road__number  excellence-road__number--big">- № 4 -</span>
+          <p class="excellence-road__about  excellence-road__about--big">Ехать в седону из лас-вегаса совсем не скучно!</p>
+        </div>
+        <div class="excellence-tourists">
+          <h2 class="excellence-tourists__title  excellence-tourists__title--big">Мало туристов</h2>
+          <span class="excellence-tourists__number  excellence-tourists__number--big">- № 5 -</span>
+          <p class="excellence-tourists__about  excellence-tourists__about--big">Большинство едет в гранд каньон и толпится там</p>
+        </div>
       </div>
     </section>
     <section class="interest">
-      <h2 class="interest__title  interest__title--title">заинтересовались?</h2>
-      <p class="interest__about  interest__about--about">укажите предполашаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="interest__searchhost  interest__searchhost--searchhost" type="button">найти гостинницу</button>
+      <div class="interest__wraper">
+        <h2 class="interest__title  interest__title--big">Заинтересовались?</h2>
+        <p class="interest__about  interest__about--big">Укажите предполашаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="interest__searchhost  interest__searchhost--big" type="button">Найти гостинницу</button>
+      </div>
     </section>
     <section class="map">
-      <img src="#" width="50" height="50" alt="Карта">
+      <div class="map__wraper">
+        <div class="map__image">
+          <img src="img/map_image.jpg" width="320" height="350" alt="Карта">
+        </div>
+      </div>
     </section>
     <footer class="page-footer">
       <div class="page-footer__wraper">
@@ -87,13 +100,17 @@
         </section>
         <section class="page-footer__social">
           <span class="social-links">
-            <a class="social-link  social-link--tv" href="https://twitter.com/">Твиттер</a>
+            <a class="social-link  social-link--tw" href="https://twitter.com/">Твиттер</a>
             <a class="social-link  social-link--fb" href="https://facebook.com">Фейсбук</a>
             <a class="social-link  social-link--yb" href="https://www.youtube.com/">Ютуб</a>
           </span>
         </section>
-        <section>
-          <p>Разработано<a href="#"><img src="#" width="50" height="50" alt="Эмблема HTML Academy"></a></p>
+        <section class="page-footer__copyright  page-footer-copyright">
+          <p class="page-footer-copyright__title">Разработано
+            <a class="page-footer-copyright__link" href="#">
+              <img src="#" width="50" height="50" alt="Эмблема HTML Academy">
+            </a>
+          </p>
         </section>
       </div>
     </footer>
