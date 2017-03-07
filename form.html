@@ -3,28 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <button class="page-header__close" type="button">Закрыть меню</button>
       <div class="page-header__logo">
-          <img src="#" width="50" height="50" alt="City of Sedona">
+          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Город седона">
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toogle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="./index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="./photo.html">Фото и видео</a></li>
-            <li class="main-nav__item"><a>Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru/">html academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="./photo.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <section class="comment">
       <div class="comment__wraper">
-        <img src="#" width="50" height="50" alt="Гора">
+        <div class="comment__image">
+          <img src="img/text-sedona.svg" width="200" height="50" alt="Гора">
+        </div>
         <h2 class="comment__title  comment__title--big">Оставьте свой отзыв</h2>
         <p class="comment__about  comment__about--big">Помогите нашим отелям стать лучше оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
@@ -35,24 +38,24 @@
           <fieldset class="information-form__introduce  information-form-introduce">
             <legend class="information-form-introduce__legend  information-form-introduce__legend--big">Представтесь:</legend>
             <label class="information-form-introduce__label  information-form-introduce__label--big" for="name">Имя*</label>
-            <input class="information-form-introduce__input  information-form-introduce__input--background" type="text" name="name" id="name">
+            <input class="information-form-introduce__input  information-form-introduce__input--background" type="text" name="name" id="name" placeholder="Петр">
             <label class="information-form-introduce__label  information-form-introduce__label--big" for="surname">Фамилия*</label>
-            <input class="information-form-introduce__input  information-form-introduce__input--background" type="text" name="surname" id="surname">
+            <input class="information-form-introduce__input  information-form-introduce__input--background" type="text" name="surname" id="surname" placeholder="Иванов">
             <label class="information-form-introduce__label  information-form-introduce__label--big" for="patronymic">Отчество</label>
-            <input class="information-form-introduce__input  information-form-introduce__input--background" type="text" name="patronymic" id="patronymic">
+            <input class="information-form-introduce__input  information-form-introduce__input--background" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
           </fieldset>
           <fieldset class="information-form__contact  information-form-contact">
             <legend class="information-form-contact__legend  information-form-contact__legend--big">Контактная информация:</legend>
             <label class="information-form-contact__label  information-form-contact__label--big" for="tel">Контактный телефон*</label>
-            <input class="information-form-contact__input information-form-contact__input--background" type="text" name="tel" id="tel">
+            <input class="information-form-contact__input information-form-contact__input--background" type="text" name="tel" id="tel" placeholder="Введите телефон">
             <div class="information-form-contact__image">
-              <img src="#" width="30" height="30" alt="Телефон">
+              <img src="img/icon-phone.svg" width="18" height="18" alt="Телефон">
             </div>
             <span class="information-form-contact__error  information-form-contact__error--red">Ошибка, перепроверьте номер</span>
             <label class="information-form-contact__label  information-form-contact__label--big" for="email">Электронная почта*</label>
-            <input class="information-form-contact__input information-form-contact__input--background" type="email" name="email" id="email">
+            <input class="information-form-contact__input information-form-contact__input--background" type="email" name="email" id="email" placeholder="Введите e-mail">
             <div class="information-form-contact__image">
-              <img src="#" width="30" height="30" alt="Почта">
+              <img src="img/icon-mail.svg" width="16" height="12" alt="Почта">
             </div>
           </fieldset>
           <fieldset class="information-form__impression  information-form-impression">
@@ -79,7 +82,7 @@
     <footer class="page-footer">
       <div class="page-footer__wraper">
         <section class="page-footer__visitsedona">
-          <a href="#">#visitsedona</a>
+          <a class="page-footer__visitsedona page-footer__visitsedona--big" href="#">#Visitsedona</a>
         </section>
         <section class="page-footer__social">
           <span class="social-links">
@@ -89,9 +92,9 @@
           </span>
         </section>
         <section class="page-footer__copyright  page-footer-copyright">
-          <p class="page-footer-copyright__title">Разработано
+          <p class="page-footer-copyright__title  page-footer-copyright__title--big">Разработано
             <a class="page-footer-copyright__link" href="#">
-              <img src="#" width="50" height="50" alt="Эмблема HTML Academy">
+              <img src="img/logo-htmlacademy.svg" width="27" height="39" alt="Эмблема HTML Academy">
             </a>
           </p>
         </section>
