@@ -1,0 +1,24 @@
+.uppercase() {
+  text-transform: uppercase;
+}
+.font-family-normal() {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+.font-family-bold() {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+}
+.container() {
+  width: 320px;
+  margin: 0 auto;
+  //padding: 0 20px;
+
+  @media @tablet-widths {
+    width: 728px;
+  }
+
+  @media @desktop-widths {
+    width: 1160px;
+  }
+}

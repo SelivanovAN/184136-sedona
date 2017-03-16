@@ -3,21 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <button class="page-header__close" type="button">Закрыть меню</button>
       <div class="page-header__logo">
-          <img src="#" width="50" height="50" alt="City of Sedona">
+          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Город седона">
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toogle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="./index.html">Главная</a></li>
-            <li class="main-nav__item"><a>Фото и видео</a></li>
-            <li class="main-nav__item"><a href="./form.html">Форма отзыва</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru/">html academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="./form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a></li>
           </ul>
         </div>
       </nav>
@@ -25,7 +29,7 @@
     <section class="foto-video">
       <div class="foto-video__wraper">
         <div class="foto-video__image">
-          <img src="img/foto-video__image.jpg" width="320" height="389" alt="Гора">
+          <img src="img/text-sedona.svg" width="200" height="50" alt="Гора">
         </div>
         <h2 class="foto-video__title  foto-video__title--big">Фото и видео</h2>
         <p class="foto-video__about  foto-video__about--big">Не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
@@ -69,15 +73,15 @@
     </section>
     <section class="doubt">
       <div class="doubt__wraper">
-        <h2 class="doubt_title doubt_title--big">Все еще сомневаетесь?</h2>
-        <p class="doubt_about doubt_about--big">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <h2 class="doubt_title  doubt_title--big">Все еще сомневаетесь?</h2>
+        <p class="doubt_about  doubt_about--big">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <video src="#" controls preload="metadata"></video>
       </div>
     </section>
     <footer class="page-footer">
       <div class="page-footer__wraper">
         <section class="page-footer__visitsedona">
-          <a href="#">#visitsedona</a>
+          <a class="page-footer__visitsedona page-footer__visitsedona--big" href="#">#Visitsedona</a>
         </section>
         <section class="page-footer__social">
           <span class="social-links">
@@ -87,9 +91,9 @@
           </span>
         </section>
         <section class="page-footer__copyright  page-footer-copyright">
-          <p class="page-footer-copyright__title">Разработано
+          <p class="page-footer-copyright__title  page-footer-copyright__title--big">Разработано
             <a class="page-footer-copyright__link" href="#">
-              <img src="#" width="50" height="50" alt="Эмблема HTML Academy">
+              <img src="img/logo-htmlacademy.svg" width="27" height="39" alt="Эмблема HTML Academy">
             </a>
           </p>
         </section>
