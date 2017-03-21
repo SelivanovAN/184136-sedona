@@ -1,19 +1,17 @@
 .page-footer__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  //text-align: center;
+  width: 280px;
+  margin: 0px auto;
 }
 .page-footer__visitsedona {
   margin-bottom: 30px;
 }
 .page-footer__visitsedona--big {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -26,7 +24,8 @@
   margin-bottom: 23px;
 }
 .page-footer-copyright__title--big {
-  font-family: "PT Sans", sans-serif;
+  margin: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -37,21 +36,30 @@
   margin-left: 10px;
 }
 @media @tablet-widths {
-
-  .page-footer__wrapper {
-    width: 648px;
-    margin: 0 auto;
-    padding: 0 60px;
-    margin-bottom: 36px;
-    display: flex;
+  .page-footer .page-footer__wrapper {
     flex-direction: row;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-between;
+    width: 648px;
+    padding: 0px;
+    padding-bottom: 36px;
   }
   .page-footer__copyright {
-    align-items: center;
-    justify-content: center;
     margin-bottom: 0px;
   }
-
+  .page-footer__visitsedona {
+    margin-bottom: 0px;
+  }
+}
+@media @desktop-widths {
+  .page-footer .page-footer__wrapper {
+    width: 1112px;
+    padding: 0 44px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 36px;
+  }
+  .page-footer__visitsedona {
+    margin-bottom: 0px;
+  }
 }

@@ -1,35 +1,54 @@
 .excellence-road {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #eeeeee;
-  padding-top: 33px;
-  padding-bottom: 26px;
+  width: 280px;
+  min-height: 168px;
+  box-sizing: border-box;
+  padding: 30px 0px;
+  margin: 0;
   border-bottom: 1px solid #d6d6d6;
 }
 .excellence-road__title {
-  margin-top: 0px;
+  margin: 0px;
 }
 .excellence-road__title--big {
-  font-family: "PT Sans", sans-serif;
-  font-size: 21px;
-  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform:@text-transform;
 }
 .excellence-road__number--big {
-  font-family: "PT Sans", sans-serif;
+  margin: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #333333;
 }
 .excellence-road__about {
-  margin-bottom: 0px;
+  margin: 0px;
 }
 .excellence-road__about--big {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #333333;
   text-transform: @text-transform;
+}
+@media @tablet-widths {
+  .excellence-road {
+    width: 175px;
+    min-height: 256px;
+  }
+}
+@media @desktop-widths {
+  .excellence-road {
+    width: 262px;
+    min-height: 256px;
+  }
 }

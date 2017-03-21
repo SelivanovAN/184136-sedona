@@ -1,32 +1,39 @@
 .bridge {
   background-color: @advantages-1-2-bg;
 }
-.bridge__wraper {
-  .container();
+.bridge__wrapper {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  padding-top: 45px;
-  padding-bottom: 43px;
 }
-.bridget__title {
-  margin: 0px;
+.bridge__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 20px;
+  width: 280px;
 }
 .bridget__title--big {
-  font-family: "PT Sans", sans-serif;
-  font-size: 21px;
-  line-height: 21px;
+  margin: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
   color: #ffffff;
   text-transform:@text-transform;
 }
 .bridge__number--big {
-  font-family: "PT Sans", sans-serif;
+  margin: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #ffffff;
 }
 .bridge__about--big {
-  font-family: "PT Sans", sans-serif;
+  margin: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -34,7 +41,27 @@
   text-transform: @text-transform;
 }
 .bridge__image {
+  font-size: 0;
   width: 100%;
   min-height: 260px;
   background: #81b3d2 url("../img/bridge-image.jpg") no-repeat center/cover;
+}
+@media @tablet-widths {
+  .bridge__wrapper {
+    flex-direction: row-reverse;
+  }
+  .bridge__information {
+    min-width: 156px;
+    padding: 40px 50px;
+  }
+}
+@media @desktop-widths {
+  .bridge__information {
+    min-width: 242px;
+    padding-left: 79px;
+    padding-right: 79px;
+  }
+  .bridge__image {
+    min-height: 256px;
+  }
 }

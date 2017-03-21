@@ -10,15 +10,20 @@
   font-weight: 700;
 }
 .container() {
-  width: 280px;
+  width: auto;
   margin: 0 auto;
-  padding: 0 20px;
 
   @media @tablet-widths {
-    width: 728px;
+    width: 768px;
   }
 
   @media @desktop-widths {
-    width: 1160px;
+    width: 1200px;
+  }
+}
+@media @desktop-widths {
+  .page-body {
+    width: 1200px;
+    margin: 0 auto;
   }
 }
