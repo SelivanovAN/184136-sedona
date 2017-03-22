@@ -10,92 +10,118 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <button class="page-header__close" type="button">Закрыть меню</button>
-      <div class="page-header__logo">
-          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Город седона">
-      </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toogle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+      <div class="page-header__wrapper">
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="page-header__close" type="button">Закрыть меню</button>
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link">Фото и видео</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="./form.html">Форма отзыва</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="./index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="./form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="https://htmlacademy.ru/">html academy</a></li>
+            <li classs="main-nav__item  main-nav__item--logo  main-nav__item--center">
+              <button class="main-nav__toogle" type="button">Открыть меню</button>
+              <a class="main-nav__logo">
+                <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Город седона">
+              </a>
+            </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <section class="foto-video">
       <div class="foto-video__wraper">
         <div class="foto-video__image">
-          <img src="img/text-sedona.svg" width="200" height="50" alt="Гора">
+          <img class="foto-video__logo-title" src="img/text-sedona.svg" width="229" height="39" alt="Гора">
         </div>
-        <h2 class="foto-video__title  foto-video__title--big">Фото и видео</h2>
-        <p class="foto-video__about  foto-video__about--big">Не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="foto-video__description">
+          <h2 class="foto-video__title  foto-video__title--big">Фото и видео</h2>
+          <p class="foto-video__about  foto-video__about--big">Не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery  gallery-doubt">
       <div class="gallery__wraper">
-        <div class="gallery-item">
+        <figure class="gallery-item">
           <div class="gallery-item__image">
-            <img src="img/non_native_open_spaces.jpg" width="280" height="280" alt="Неродные просторы">
+            <img class="gallery-item__img" src="img/non_native_open_spaces.jpg" width="280" height="280" alt="Неродные просторы">
           </div>
-          <h3 class="gallery-item__title  gallery-item__title--big">Неродные просторы</h3>
-          <cite class="gallery-item__cite  gallery-item__cte--font">Автор фото: Борис</cite>
-          <span class="gallery-item__cool  gallery-item__cool--thick">1350</span>
-        </div>
-        <div class="gallery-item">
+          <figcaption class="gallery-item__description">
+            <div class="gallery-item__description-text">
+              <h3 class="gallery-item__title  gallery-item__title--big">Неродные просторы</h3>
+              <cite class="gallery-item__cite  gallery-item__cte--font">Автор фото: Борис</cite>
+            </div>
+            <span class="gallery-item__cool  gallery-item__cool--thick">1350</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item">
           <div class="gallery-item__image">
-            <img src="img/local_vegetation.jpg" width="280" height="280" alt="Местная растительность">
+            <img class="gallery-item__img" src="img/local_vegetation.jpg" width="280" height="280" alt="Местная растительность">
           </div>
-          <h3 class="gallery-item__title  gallery-item__title--big">Местная растительность</h3>
-          <cite class="gallery-item__cite  gallery-item__cte--font">Автор фото: Сергей</cite>
-          <span class="gallery-item__cool  gallery-item__cool--thick">143</span>
-        </div>
-        <div class="gallery-item">
+          <figcaption class="gallery-item__description">
+            <div class="gallery-item__description-text">
+              <h3 class="gallery-item__title  gallery-item__title--big">Местная растительность</h3>
+              <cite class="gallery-item__cite  gallery-item__cte--font">Автор фото: Сергей</cite>
+            </div>
+            <span class="gallery-item__cool  gallery-item__cool--thick">143</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item">
           <div class="gallery-item__image">
-            <img src="img/the_road_to_the_north.jpg" width="280" height="280" alt="Дорога на север">
+            <img class="gallery-item__img" src="img/the_road_to_the_north.jpg" width="280" height="280" alt="Дорога на север">
           </div>
-          <h3 class="gallery-item__title  gallery-item__title--big">Дорога на север</h3>
-          <cite class="gallery-item__cite  gallery-item__cte--font">Автор фото: Петр</cite>
-          <span class="gallery-item__cool  gallery-item__cool--thick">96</span>
-        </div>
-        <div class="gallery-item">
+          <figcaption class="gallery-item__description">
+            <div class="gallery-item__description-text">
+              <h3 class="gallery-item__title  gallery-item__title--big">Дорога на север</h3>
+              <cite class="gallery-item__cite  gallery-item__cte--font">Автор фото: Петр</cite>
+            </div>
+            <span class="gallery-item__cool  gallery-item__cool--thick">96</span>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item">
           <div class="gallery-item__image">
-            <img src="img/devil_s_bridge.jpg" width="280" height="280" alt="Мост дьявола">
+            <img class="gallery-item__img" src="img/devil_s_bridge.jpg" width="280" height="280" alt="Мост дьявола">
           </div>
-          <h3 class="gallery-item__title  gallery-item__title--big">Мост дьявола</h3>
-          <cite class="gallery-item__cite  gallery-item__cte--font">Автор фото: Антон</cite>
-          <span class="gallery-item__cool  gallery-item__cool--thick">254</span>
-        </div>
+          <figcaption class="gallery-item__description">
+            <div class="gallery-item__description-text">
+              <h3 class="gallery-item__title  gallery-item__title--big">Мост дьявола</h3>
+              <cite class="gallery-item__cite  gallery-item__cte--font">Автор фото: Антон</cite>
+            </div>
+            <span class="gallery-item__cool  gallery-item__cool--thick">254</span>
+          </figcaption>
+        </figure>
       </div>
     </section>
     <section class="doubt">
       <div class="doubt__wraper">
         <h2 class="doubt_title  doubt_title--big">Все еще сомневаетесь?</h2>
         <p class="doubt_about  doubt_about--big">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video src="#" controls preload="metadata"></video>
+      </div>
+      <div class="doubt__video-player">
+        <div class="doubt__remote-layout">
+          <div class="doubt__remote-line">
+            <div class="doubt__remote-dot"></div>
+          </div>
+        </div>
+        <div class="doubt__userbar-layout">
+          <button class="doubt__replay" type="button">Видео сначала</button>
+          <button class="doubt__subtitle" type="button">Субтитры</button>
+          <button class="doubt__full-screan" type="button">Полный экран</button>
+        </div>
       </div>
     </section>
     <footer class="page-footer">
-      <div class="page-footer__wraper">
-        <section class="page-footer__visitsedona">
-          <a class="page-footer__visitsedona page-footer__visitsedona--big" href="#">#Visitsedona</a>
-        </section>
-        <section class="page-footer__social">
-          <span class="social-links">
-            <a class="social-link  social-link--tw" href="https://twitter.com/">Твиттер</a>
-            <a class="social-link  social-link--fb" href="https://facebook.com">Фейсбук</a>
-            <a class="social-link  social-link--yb" href="https://www.youtube.com/">Ютуб</a>
-          </span>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__visitsedona page-footer__visitsedona--big" href="#">#Visitsedona</a>
+        <section class="page-footer__social social-links">
+          <a class="social-link  social-link--tw" href="https://twitter.com/">Твиттер</a>
+          <a class="social-link  social-link--fb" href="https://facebook.com">Фейсбук</a>
+          <a class="social-link  social-link--yb" href="https://www.youtube.com/">Ютуб</a>
         </section>
         <section class="page-footer__copyright  page-footer-copyright">
-          <p class="page-footer-copyright__title  page-footer-copyright__title--big">Разработано
-            <a class="page-footer-copyright__link" href="#">
-              <img src="img/logo-htmlacademy.svg" width="27" height="39" alt="Эмблема HTML Academy">
-            </a>
-          </p>
+          <p class="page-footer-copyright__title  page-footer-copyright__title--big">Разработано</p>
+          <a class="page-footer-copyright__link" href="#">
+            <img src="img/logo-htmlacademy.svg" width="27" height="39" alt="Эмблема HTML Academy">
+          </a>
         </section>
       </div>
     </footer>
