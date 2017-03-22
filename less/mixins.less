@@ -1,0 +1,29 @@
+.uppercase() {
+  text-transform: uppercase;
+}
+.font-family-normal() {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+}
+.font-family-bold() {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+}
+.container() {
+  width: auto;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 768px;
+  }
+
+  @media @desktop-widths {
+    width: 1200px;
+  }
+}
+@media @desktop-widths {
+  .page-body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,145 @@
+.comfort {
+  .container();
+}
+.comfort__wrapper {
+  display: flex;
+  flex-direction: column;
+  //margin: 0 auto;
+  width: 280px;
+  padding-top: 30px;
+  padding-bottom: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.comfort__item {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding-left: 50px;
+}
+.comfort__item:last-child .comfort__about {
+  margin-bottom: 0px;
+}
+.comfort__title {
+  margin: 0;
+  //padding-left: 50px;
+}
+.comfort__house::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  left: 0px;
+  top: 0px;
+  background-color: transparent;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //background: transparent url("../img/icon-house.svg") no-repeat center/cover;
+}
+.comfort__souvenir::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  left: 0px;
+  top: 0px;
+  background-color: transparent;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //background: transparent url("../img/icon-gift.svg") no-repeat center/cover;
+}
+.comfort__food::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  left: 0px;
+  top: 0px;
+  background-color: transparent;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //background: transparent url("../img/icon-burger.svg") no-repeat center/cover;
+}
+.comfort__title--big {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+  text-transform:@text-transform;
+}
+.comfort__about {
+  margin: 0;
+  margin-top: 19px;
+  margin-bottom: 34px;
+}
+.comfort__about--big {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: @text-transform;
+}
+@media @tablet-widths {
+  .comfort__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: normal;
+    padding-left: 0px;
+    padding-right: 0px;
+    //width: 662px;
+  }
+  .comfort__item {
+    width: 33%;
+    text-align: center;
+    padding-top: 70px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .comfort__house::before,
+  .comfort__souvenir::before,
+  .comfort__food::before {
+    left: 42%;
+  }
+  .comfort__about {
+    margin-bottom: 0px;
+  }
+  .comfort__item:nth-of-type(2) {
+    order: 3;
+  }
+}
+@media @desktop-widths {
+  .comfort__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    width: 1060px;
+  }
+  .comfort__item {
+    width: 33%;
+    text-align: center;
+    padding-top: 70px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .comfort__house::before,
+  .comfort__souvenir::before,
+  .comfort__food::before {
+    left: 130px;
+  }
+  .comfort__about {
+    margin-bottom: 0px;
+  }
+  .comfort__wrapper {
+    padding-top: 58px;
+    margin-bottom: 85px;
+  }
+}

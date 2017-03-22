@@ -1,0 +1,15 @@
+.gallery {
+  background-color: #ffffff;
+}
+.gallery__wraper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media @tablet-widths {
+  .gallery__wraper {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
