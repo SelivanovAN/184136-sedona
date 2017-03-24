@@ -1,6 +1,20 @@
 .information-form-emotions {
   background-color: #ffffff;
 }
+.information-form-emotions__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .container();
+  padding-top: 18px;
+  padding-bottom: 51px;
+  max-width: 960px;
+}
+.information-form-emotions__legend {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 17px;
+}
 .information-form-emotions__legend--big {
   .font-family-bold();
   font-size: 18px;
@@ -8,10 +22,79 @@
   color: #000000;
   .uppercase();
 }
-.information-form-emotions__textarea--font {
+.information-form-emotions__textarea {
+  height: 160px;
+  padding: 0;
+  border: none;
+  resize: none;
   .font-family-normal();
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+}
+.information-form-emotions__textarea--font {
   background-color: #f2f2f2;
+}
+.information-form-emotions__textarea::placeholder {
+  padding-top: 16px;
+  padding-right: 10px;
+  padding-left: 19px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+@media @mobile {
+  .information-form-emotions__wrapper {
+    width: 280px;
+    border-top: 1px solid #e5e5e5;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media @tablet-widths {
+  .information-form__emotions {
+    order: -3;
+    width: 100%;
+  }
+  .information-form-emotions__wrapper {
+    padding-bottom: 60px;
+    &::before {
+      content: "* – обязательные поля";
+      position: absolute;
+      bottom: -42px;;
+      right: 0;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: bold;
+      color: #333333;
+      text-transform: uppercase;
+    }
+  }
+  .information-form-emotions__legend {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 55px;
+    font-size: 21px;
+    align-self: center;
+    background-color: #ffffff;
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      top: 30px;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+}
+@media @desktop-widths {
+  .information-form-emotions__wrapper {
+    padding-bottom: 58px;
+  }
+  .information-form-emotions__legend {
+    padding-bottom: 57px;
+  }
 }
