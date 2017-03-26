@@ -6,21 +6,40 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--<script type="text/javascript" href="js/script.js"></script>-->
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
-          <button class="page-header__close" type="button">Закрыть меню</button>
+          <button class="page-header__close" type="button">Закрыть меню
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+              <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1" fill="#ffffff"/>
+            </svg>
+          </button>
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block  main-nav__item-link--active">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="./photo.html">Фото и видео</a></li>
             <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="./form.html">Форма отзыва</a></li>
             <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="https://htmlacademy.ru/">html academy</a></li>
             <li class="main-nav__item  main-nav__item--logo  main-nav__item--center">
-              <button class="main-nav__toogle" type="button">Открыть меню</button>
+              <button class="main-nav__toogle" type="button">Открыть меню
+                <svg version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+                  <g>
+                    <rect width="22.928" height="3.964" fill="#81b3d2"/>
+                    <rect y="9.009" width="22.928" height="3.964" fill="#81b3d2"/>
+                    <rect y="18.018" width="22.928" height="3.964" fill="#81b3d2"/>
+                  </g>
+                </svg>
+              </button>
               <a class="main-nav__logo">
-                <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Город седона">
+                <picture class="main-nav__logo-svg">
+                  <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                  <source media="(min-width: 320px)" srcset="img/logo-sedona-mobile.svg">
+                  <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Город седона">
+                </picture>
               </a>
             </li>
           </ul>
@@ -51,16 +70,17 @@
     <section class="comfort">
       <div class="comfort__wrapper">
         <div class="comfort__item">
+          <!--<svg class="comfort__item-icon comfort__item-icon--house" width="39" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-house"></use></svg>-->
           <h2 class="comfort__house  comfort__title  comfort__title--big  comfort__svg--center">Жилье</h2>
-          <p class="comfort__about  comfort__about--big">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <p class="comfort__about  comfort__about-house  comfort__about--big">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="comfort__item">
           <h2 class="comfort__souvenir  comfort__title  comfort__title--big  comfort__svg--center">Сувениры</h2>
-          <p class="comfort__about  comfort__about--big">Не только китайского, но и местного производства!</p>
+          <p class="comfort__about  comfort__about-souvenir  comfort__about--big">Не только китайского, но и местного производства!</p>
         </div>
         <div class="comfort__item">
           <h2 class="comfort__food  comfort__title  comfort__title--big  comfort__svg--center">Еда</h2>
-          <p class="comfort__about  comfort__about--big">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <p class="comfort__about  comfort__about-good  comfort__about--big">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
       </div>
     </section>
@@ -96,12 +116,21 @@
     <section class="interest">
       <div class="interest__wraper  interest__words">
         <h2 class="interest__title  interest__title--big">Заинтересовались?</h2>
-        <p class="interest__about  interest__about--big">Укажите предполашаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="interest__about  interest__about--big">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="interest__searchhost  interest__searchhost--big" type="button">Найти гостиницу</button>
       </div>
     </section>
     <section class="map">
+      <!--<div class="map__image">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Picture">
+        </picture>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148181.0999124713!2d-111.89390767626047!3d34.84691312145236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1490471613291" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>-->
       <div class="map__image">
+        <div class="map-yandex" id="map"></div>
       </div>
     </section>
     <footer class="page-footer">
@@ -115,10 +144,12 @@
         <section class="page-footer__copyright  page-footer-copyright">
           <p class="page-footer-copyright__title  page-footer-copyright__title--big">Разработано</p>
           <a class="page-footer-copyright__link" href="#">
-            <img src="img/logo-htmlacademy.svg" width="27" height="39" alt="Эмблема HTML Academy">
+            <!--<img src="img/logo-htmlacademy.svg" width="27" height="39" alt="Эмблема HTML Academy">-->
           </a>
         </section>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+<script src="js/script.js"></script>
   </body>
 </html>

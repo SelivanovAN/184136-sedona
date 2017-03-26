@@ -1,8 +1,15 @@
 .foto-video {
   background-color: #ffffff;
+  //position: relative;
 }
 .foto-video__wraper {
-  .container();
+  //.container();
+  //position: relative;
+  //width: 320px;
+  //max-height: 158px;
+  //padding-top: 50px;
+  //background-position: 50% 100%
+  //position: relative;
 }
 .foto-video__description {
   display: flex;
@@ -33,13 +40,29 @@
   text-transform: @text-transform;
 }
 .foto-video__image {
-  height: 389px;
-  display: flex;
+  position: relative;
+  //width: 320px;
+  min-height: 108px;
+  padding-top: 50px;
+  //background-position: 50% 100%;
+  //display: flex;
   background-color: #ffffff;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  text-align: center;
+}
+.foto-video__image::after {
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  content: "";
+  display: block;
+  width: 333px;
+  height: 28px;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
+  background-size: contain;
 }
 .foto-video__logo-title {
   margin: auto;
@@ -58,14 +81,28 @@
 }
 @media @tablet-widths {
   .foto-video__image {
-    height: 518px;
+    min-height: 119px;
+    padding-top: 77px;
+    padding-bottom: 93px;
+    text-align: center;
+  }
+  .foto-video__image::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 768px;
+    height: 60px;
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
+    background-size: 100%;
   }
   .foto-video__logo-title {
     height: 76px;
     width: 460px;
   }
   .foto-video__wraper {
-  padding: 0 60px
+  //padding: 0 60px
   }
   .foto-video__title {
   padding-top: 70px;
@@ -77,18 +114,27 @@
   max-width: 464px;
   padding-bottom: 70px;
   }
-}
-.foto-video .foto-video__image {
-height: 158px;
-}
-@media @tablet-widths {
-  .foto-video .foto-video__image {
-    height: 301px;
+  .foto-video__wraper {
+  width: auto;
   }
 }
 @media @desktop-widths {
-  .foto-video .foto-video__image {
-    height: 290px;
+  .foto-video__image {
+    min-height: 131px;
+    padding-top: 77px;
+    padding-bottom: 93px;
+    text-align: center;
+  }
+  .foto-video__image::after {
+    position: absolute;
+    bottom: -4px;
+    left: -1px;
+    content: "";
+    display: block;
+    width: 1201px;
+    height: 60px;
+    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+    background-size: 100%;
   }
   .foto-video__wraper {
   padding: 0;

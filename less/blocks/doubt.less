@@ -82,6 +82,20 @@
   display: flex;
   justify-content: space-between;
 }
+.doubt__svg {
+  background: none;
+  border: none;
+}
+.doubt__replay {
+  background: none;
+  border: none;
+  width: auto;
+  padding: 0;
+  height: 20px;
+  font-size: 0;
+  cursor: pointer;
+}
+/*
 .doubt__replay {
   padding: 0;
   border: 0;
@@ -90,8 +104,19 @@
   font-size: 0;
   background-color: transparent;
   background-image: url(../img/icon-video-replay.svg);
-}
+}*/
 .doubt__subtitle {
+  padding: 0px;
+  border: none;
+  margin-right: 31px;
+  margin-left: auto;
+  width: auto;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+/*.doubt__subtitle {
   padding: 0;
   border: 0;
   margin-right: 31px;
@@ -101,8 +126,27 @@
   font-size: 0;
   background-color: transparent;
   background-image: url(../img/icon-video-subtitles.svg);
-}
+}*/
 .doubt__full-screan {
+  padding: 0;
+  border: none;
+  width: auto;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.doubt__replay:hover .doubt__fill,
+.doubt__subtitle:hover .doubt__fill,
+.doubt__full-screan:hover .doubt__fill {
+  fill: #333333;
+}
+.doubt__replay:active .doubt__fill,
+.doubt__subtitle:active .doubt__fill,
+.doubt__full-screan:active .doubt__fill {
+  fill: #c1c1c1;
+}
+/*.doubt__full-screan {
   padding: 0;
   border: 0;
   width: 20px;
@@ -110,7 +154,7 @@
   font-size: 0;
   background-color: transparent;
   background-image: url(../img/icon-video-fullscreen.svg);
-}
+}*/
 @media @mobile {
   .doubt__userbar-layout {
     position: relative;
@@ -120,6 +164,9 @@
     padding-top: 23px;
     background-color: #f2f2f2;
     box-sizing: border-box;
+  }
+  .doubt__fill {
+    fill: #5c6870;
   }
 }
 @media @tablet-widths {
@@ -154,6 +201,9 @@
     padding-left: 35px;
     box-sizing: border-box;
   }
+  .doubt__fill {
+    fill: #ffffff;
+  }
 }
 @media @desktop-widths {
   .doubt__text-wrap {
@@ -161,5 +211,8 @@
   }
   .doubt__video-player {
     margin-bottom: 121px
+  }
+  .doubt__fill {
+    fill: #ffffff;
   }
 }
