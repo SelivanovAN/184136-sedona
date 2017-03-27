@@ -10,7 +10,7 @@
 .information-forms__send {
   width: 280px;
   max-width: 324px;
-  margin-bottom: 73px;
+  margin-bottom: 37px;
   padding: 16px 0;
   border: 0;
   align-self: center;
@@ -20,10 +20,24 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
+  cursor: pointer;
+}
+.information-forms__send:hover {
+  background-color: #669ec0;
+}
+.information-forms__send:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+  //opacity: 0.3;
+}
+.information-forms__send:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 @media @tablet-widths {
   .form__wrapper {
-    max-width: 960px;
+    width: auto;
+    //max-width: 960px;
     padding-left: 60px;
     padding-right: 60px;
     flex-direction: row;
@@ -31,7 +45,7 @@
     justify-content: space-between;
   }
   .information-forms__send {
-    margin-bottom: 96px;
+    margin-bottom: 60px;
     width: 50%;
     max-width: 50%;
   }
@@ -42,6 +56,6 @@
     padding-right: 120px;
   }
   .information-forms__send {
-    margin-bottom: 101px;
+    margin-bottom: 65px;
   }
 }

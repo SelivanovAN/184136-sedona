@@ -37,11 +37,24 @@
     top: -13px;
   }
 }
+.information-form-impression__label:hover {
+  &::before {
+    background-color: #e5e5e5;
+  }
+}
+.information-form-impression__label:active {
+  &::before {
+    background-color: #d5d5d5;
+  }
+}
 .information-form-impression__label:last-of-type {
   margin-bottom: 0;
 }
 .information-form-impression__radio {
   display: none;
+}
+.information-form-impression__label:active  .information-form-impression__radio:checked + .information-form-impression__label::after {
+    opacity: 0.3;
 }
 .information-form-impression__radio:checked + .information-form-impression__label::after {
   content: "";

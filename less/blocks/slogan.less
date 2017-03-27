@@ -1,6 +1,70 @@
 .slogan-image {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #84a9c7 url("../img/foto-video_image.jpg") no-repeat center/cover;
+  background: #84a9c7 url(../../img/bg-back-mobile@1x.jpg) no-repeat center/cover;
+  z-index: -1;
+
+  @media (max-width: 767px) and (min-resolution: 144dpi),
+          (max-width: 767px) and (min-resolution: 1.5dppx) {
+    background-image: url(../../img/bg-back-mobile@2x.jpg);
+  }
+
+  @media (min-width: 768px) {
+    background-image: url(../../img/bg-back-tablet@1x.jpg);
+  }
+
+  @media (min-width: 768px) and (min-resolution: 144dpi),
+  (min-width: 768px) and (min-resolution: 1.5dppx) {
+    background-image: url(../../img/bg-back-tablet@2x.jpg);
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url(../../img/bg-back-desktop@1x.jpg);
+  }
+
+  @media (min-width: 1200px) and (min-resolution: 144dpi),
+  (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    background-image: url(../../img/bg-back-desktop@2x.jpg);
+  }
+}
+.slogan-image::after {
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  content: "";
+  display: block;
+  width: 333px;
+  height: 28px;
+  background: url(../img/bg-intro-triangle-mobile.svg) no-repeat;
+  background-size: contain;
+  //z-index: 5;
+}
+@media @tablet-widths {
+  .slogan-image::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 768px;
+    height: 60px;
+    background: url(../img/bg-intro-triangle-tablet.svg) no-repeat;
+    background-size: 100%;
+    //z-index: 5;
+  }
+}
+@media @desktop-widths {
+  .slogan-image::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-image: url(../img/bg-intro-triangle-desktop.svg);
+    background-size: 100%;
+  }
 }

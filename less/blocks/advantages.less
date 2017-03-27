@@ -7,12 +7,27 @@
   text-align: center;
 }
 .advantages__information {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
   padding: 40px 20px;
+  padding-top: 80px;
   width: 280px;
+}
+.advantages__information::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 37px;
+  //margin-top: -1px;
+  background: url(../img/bg-triangle.svg) no-repeat;
+  background-size: cover;
+  z-index: 1;
 }
 .advantages-sity__title--big {
   margin: 0px;
@@ -53,6 +68,9 @@
   .advantages__information {
     min-width: 156px;
     padding: 40px 50px;
+  }
+  .advantages__information::before {
+    display: none;
   }
 }
 @media @desktop-widths {

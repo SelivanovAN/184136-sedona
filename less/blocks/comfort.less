@@ -1,11 +1,12 @@
 .comfort {
   .container();
+  background-color: #ffffff;
 }
 .comfort__wrapper {
   display: flex;
   flex-direction: column;
   //margin: 0 auto;
-  width: 280px;
+  //width: 280px;
   padding-top: 30px;
   padding-bottom: 34px;
   padding-left: 20px;
@@ -13,8 +14,7 @@
 }
 .comfort__item {
   position: relative;
-  width: 100%;
-  margin: 0 auto;
+  //width: 100%;
   background-color: #ffffff;
   padding-left: 50px;
 }
@@ -77,7 +77,7 @@
 }
 .comfort__about {
   margin: 0;
-  margin-top: 19px;
+  margin-top: 22px;
   margin-bottom: 34px;
 }
 .comfort__about--big {
@@ -89,25 +89,56 @@
   text-transform: @text-transform;
 }
 @media @tablet-widths {
+  .comfort {
+    width: 100%;
+  }
   .comfort__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    align-items: normal;
+    align-items: flex-start;
     padding-left: 0px;
     padding-right: 0px;
+    padding-top: 60px;
     //width: 662px;
   }
   .comfort__item {
     width: 33%;
     text-align: center;
     padding-top: 70px;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
-  .comfort__house::before,
-  .comfort__souvenir::before,
-  .comfort__food::before {
-    left: 42%;
+  .comfort__about-house,
+  .comfort__about-souvenir {
+    padding: 0 36px;
+  }
+  .comfort__about-good {
+    padding: 0 40px;
+  }
+  .comfort__house,
+  .comfort__souvenir,
+  .comfort__food {
+    padding-top: 40px;
+  }
+  .comfort__item .comfort__house::before,
+  .comfort__item .comfort__food::before,
+  .comfort__item .comfort__souvenir::before {
+    margin: 0 auto;
+    right: 0;
+  }
+  .comfort__item .comfort__food::before {
+    width: 79px;
+    height: 72px;
+  }
+  .comfort__item .comfort__house::before {
+    width: 75px;
+    height: 72px;
+  }
+  .comfort__item .comfort__souvenir::before {
+    width: 64px;
+    height: 75px;
   }
   .comfort__about {
     margin-bottom: 0px;
@@ -117,29 +148,28 @@
   }
 }
 @media @desktop-widths {
-  .comfort__wrapper {
+  .comfort .comfort__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px;
-    width: 1060px;
+    padding: 60px 0 85px;
+    width: 100%;
+    margin-bottom: 0;
   }
-  .comfort__item {
+  .comfort .comfort__item {
     width: 33%;
     text-align: center;
-    padding-top: 70px;
-    padding-left: 45px;
-    padding-right: 45px;
+    margin-right: 0;
   }
-  .comfort__house::before,
-  .comfort__souvenir::before,
-  .comfort__food::before {
-    left: 130px;
+  .comfort__about-house,
+  .comfort__about-souvenir,
+  .comfort__about-good {
+    padding: 0 47px;
   }
   .comfort__about {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .comfort__wrapper {
-    padding-top: 58px;
+    padding-top: 60px;
     margin-bottom: 85px;
   }
 }

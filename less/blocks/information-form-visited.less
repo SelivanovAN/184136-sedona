@@ -52,6 +52,19 @@
   background-image: url(../img/icon-tick.svg);
   background-repeat: no-repeat;
 }
+.information-form-visited__label:hover {
+  &::before {
+    background-color: #e5e5e5;
+  }
+}
+.information-form-visited__label:active {
+  &::before {
+    background-color: #d5d5d5;
+  }
+}
+.information-form-visited__label:active  .information-form-visited__checkbox:checked + .information-form-visited__label::after {
+  background-image: url(../img/icon-tick-opacity.svg);
+}
 .information-form-visited__label:last-of-type {
   margin-bottom: 0;
 }

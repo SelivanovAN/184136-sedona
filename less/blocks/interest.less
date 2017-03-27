@@ -1,8 +1,10 @@
 .interest {
   background-color: #ffffff;
   .container();
+  padding-top: 26px;
+  padding-bottom: 50px;
 }
-.interest__wraper {
+.interest__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,17 +13,16 @@
   //height: 287px;
   box-sizing: border-box;
   padding: 0 18px;
-  padding-top: 33px;
-  padding-bottom: 49px;
-
+  //padding-top: 33px;
+  //padding-bottom: 49px;
   margin: 0 auto;
   text-align: center;
 }
 .interest__title {
   margin: 0px;
+  margin-bottom: 18px;
 }
 .interest__title--big {
-  margin: 0px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
@@ -31,11 +32,12 @@
 }
 .interest__about {
   margin: 0px;
+  margin-bottom: 36px;
 }
 .interest__about--big {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 24px;
   font-weight: 400;
   color: #333333;
   text-transform: @text-transform;
@@ -45,7 +47,10 @@
   min-height: 58px;
   border: none;
   background-color: #81b3d2;
-  padding: 0;
+  text-decoration: none;
+  padding: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 .interest__searchhost--big {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -55,13 +60,48 @@
   color: #ffffff;
   text-transform:@text-transform;
 }
+.interest__searchhost:hover {
+  background-color: #669ec0;
+}
+.interest__searchhost:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+  //opacity: 0.3;
+}
+.interest__searchhost:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
 @media @tablet-widths {
-  .interest__wraper {
-  width: 458px;
+  .interest {
+    width: 100%;
+    padding-top: 54px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .interest__wrapper {
+  max-width: 458px;
+  padding: 0px;
+  }
+  .interest__title--big {
+    font-size: 30px;
+  }
+  .interest__searchhost {
+    max-width: 458px;
   }
 }
 @media @desktop-widths {
-  .interest__wraper {
-    width: 458px;
+  .interest {
+    padding-top: 58px;
+    padding-bottom: 66px;
+  }
+  .interest__wrapper {
+    //width: 458px;
+  }
+  .interest__title--big {
+    font-size: 30px;
+  }
+  .interest__searchhost {
+    max-width: 458px;
   }
 }
