@@ -1,5 +1,6 @@
 .comfort {
   .container();
+  background-color: #ffffff;
 }
 .comfort__wrapper {
   display: flex;
@@ -88,6 +89,9 @@
   text-transform: @text-transform;
 }
 @media @tablet-widths {
+  .comfort {
+    width: 100%;
+  }
   .comfort__wrapper {
     flex-direction: row;
     justify-content: space-between;

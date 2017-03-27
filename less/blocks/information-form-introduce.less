@@ -38,12 +38,22 @@
 .information-form-introduce__input {
   flex-grow: 1;
   min-width: 0;
+  min-height: 26px;
   margin-bottom: 20px;
   margin-left: 14px;
-  padding: 20px 0;
+  padding: 16px 0;
   padding-left: 22px;
   border: none;
+  box-sizing: content-box;
   background-color: #f2f2f2;
+}
+.information-form-introduce__input:hover {
+  background-color: #e5e5e5;
+}
+.information-form-introduce__input:focus {
+  background-color: #fff;
+  outline: 4px solid #e6e6e6;
+  outline-offset: -4px;
 }
 .information-form-introduce__label:last-of-type .information-form-introduce__input{
   margin-bottom: 0;

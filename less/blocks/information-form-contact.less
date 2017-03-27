@@ -28,15 +28,24 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  &::after {
+}
+.information-form-contact__label-tel::after {
     content: "";
     position: absolute;
     right: 0;
     bottom: 0px;
     width: 58px;
     height: 58px;
-    background-color: #e6e6e6;
-  }
+    background: #e6e6e6 url("../img/icon-phone.svg") no-repeat center;
+}
+.information-form-contact__label-email::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  width: 58px;
+  height: 58px;
+  background: #e6e6e6 url("../img/icon-mail.svg") no-repeat center;
 }
 .information-form-contact__label:first-of-type {
   margin-bottom: 40px;
@@ -60,11 +69,21 @@
   text-transform: uppercase;
 }
 .information-form-contact__input {
-  padding: 21px 0;
+  padding: 16px 0;
   padding-right: 58px;
   padding-left: 22px;
   border: none;
   background-color: #f2f2f2;
+  min-height: 26px;
+  box-sizing: content-box;
+}
+.information-form-contact__input:hover {
+  background-color: #e5e5e5;
+}
+.information-form-contact__input:focus {
+  background-color: #fff;
+  outline: 4px solid #e6e6e6;
+  outline-offset: -4px;
 }
 .information-form-contact__input::placeholder {
   font-size: 18px;
