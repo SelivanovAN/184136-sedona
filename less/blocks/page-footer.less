@@ -41,21 +41,18 @@
   display: block;
   width: 27px;
   height: 39px;
-  background: transparent url("../img/logo-htmlacademy-black.svg") no-repeat center;
-}
-.page-footer-copyright__link:hover {
-  content: "";
-  display: block;
-  width: 27px;
-  height: 39px;
-  background: transparent url("../img/logo-htmlacademy-blue.svg") no-repeat center;
-}
-.page-footer-copyright__link:active {
-  content: "";
-  display: block;
-  width: 27px;
-  height: 39px;
-  background: transparent url("../img/logo-htmlacademy-grey.svg") no-repeat center;
+
+  &:hover {
+    .page-footer__icon-html-academy {
+      fill: #81b3d2;
+    }
+  }
+
+  &:active {
+    .page-footer__icon-html-academy {
+      fill: #b2b2b2;
+    }
+  }
 }
 @media @tablet-widths {
   .page-footer .page-footer__wrapper {

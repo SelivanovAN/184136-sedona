@@ -14,7 +14,6 @@
 .comfort__item {
   position: relative;
   //width: 100%;
-  margin: 0 auto;
   background-color: #ffffff;
   padding-left: 50px;
 }
@@ -102,10 +101,10 @@
     width: 33%;
     text-align: center;
     padding-top: 70px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
   .comfort__about-house,
   .comfort__about-souvenir {
@@ -120,17 +119,22 @@
     padding-top: 40px;
   }
   .comfort__item .comfort__house::before,
+  .comfort__item .comfort__food::before,
+  .comfort__item .comfort__souvenir::before {
+    margin: 0 auto;
+    right: 0;
+  }
   .comfort__item .comfort__food::before {
+    width: 79px;
+    height: 72px;
+  }
+  .comfort__item .comfort__house::before {
     width: 75px;
     height: 72px;
-    margin: auto;
-    margin-left: 84px;
   }
   .comfort__item .comfort__souvenir::before {
     width: 64px;
     height: 75px;
-    margin: auto;
-    margin-left: 84px;
   }
   .comfort__about {
     margin-bottom: 0px;
@@ -143,25 +147,14 @@
   .comfort .comfort__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px;
-    padding-bottom: 85px;
-    padding-top: 60px;
-    width: 100%x;
-    margin-bottom: 0px;
+    padding: 60px 0 85px;
+    width: 100%;
+    margin-bottom: 0;
   }
   .comfort .comfort__item {
     width: 33%;
     text-align: center;
-    padding-top: 70px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-right: 0px;
-  }
-  .comfort__item .comfort__house::before,
-  .comfort__item .comfort__souvenir::before,
-  .comfort__item .comfort__food::before {
-    margin: auto;
-    margin-left: 153px;
+    margin-right: 0;
   }
   .comfort__about-house,
   .comfort__about-souvenir,
@@ -169,7 +162,7 @@
     padding: 0 47px;
   }
   .comfort__about {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .comfort__wrapper {
     padding-top: 60px;
