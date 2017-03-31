@@ -34,7 +34,7 @@
 }
 .comment__image {
   position: relative;
-  height: 389px;
+  //height: 389px;
   display: flex;
   background-color: #ffffff;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -72,26 +72,26 @@
   }
 }
 @media @tablet-widths {
-  .comment__image {
-    height: 518px;
-  }
+  //.comment__image {
+  //  height: 518px;
+  //}
   .comment__logo-title {
-    height: 76px;
+    height: 80px;
     width: 460px;
   }
   .comment__wrapper {
     padding: 0;
-    width: 100%;
+    width: auto;
   }
   .comment__title {
     padding-top: 70px;
-    padding-bottom: 35px;
-    font-size: 26px;
+    padding-bottom: 30px;
+    font-size: 30px;
     line-height: 30px;
   }
   .comment__about {
-    max-width: 464px;
-    padding-bottom: 70px;
+    max-width: 440px;
+    padding-bottom: 57px;
   }
   .comment__image::after {
     position: absolute;
@@ -104,20 +104,27 @@
     background: url(../img/bg-intro-triangle-tablet.svg) no-repeat;
     background-size: contain;
   }
-  .comment .comment__image {
-    height: 158px;
-    height: 301px;
-  }
+  //.comment .comment__image {
+  //  height: 158px;
+  //  height: 301px;
+//  }
 }
 @media @desktop-widths {
-  .comment .comment__image {
-    height: 290px;
+  //.comment .comment__image {
+    //height: 290px;
+  //}
+  .comment__image {
+    min-height: 105px;
+    padding-top: 91px;
+    padding-bottom: 104px;
+    text-align: center;
   }
   .comment__wrapper {
   padding: 0;
+  width: auto;
   }
   .comment__title {
-    padding-top: 107px;
+    padding-top: 111px;
   }
   .comment__image::after {
     left: 0;
