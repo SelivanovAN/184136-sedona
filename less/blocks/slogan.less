@@ -41,7 +41,24 @@
   background-size: contain;
   //z-index: 5;
 }
+@media @mobile {
+  .slogan__image-wrapper {
+    padding-top: 90px;
+    padding-bottom: 81px;
+  }
+  .slogan__image-slogan {
+    width: 320;
+  }
+}
 @media @tablet-widths {
+  .slogan__image-wrapper {
+    padding-top: 64px;
+    padding-bottom: 73px;
+  }
+  .slogan__image-slogan {
+    width: 460px;
+    height: 377px;
+  }
   .slogan-image::after {
     position: absolute;
     bottom: -4px;
@@ -72,7 +89,10 @@
     height: 348px;
   }
   .slogan__image-wrapper {
-    padding-top: 80px;
-    padding-bottom: 86px;
+    padding-top: 77px;
+    padding-bottom: 84px;
+  }
+  .slogan__image-slogan {
+    height: 352px;
   }
 }

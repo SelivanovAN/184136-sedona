@@ -12,18 +12,18 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 40px 20px;
-  padding-top: 80px;
+  padding: 36px 20px;
+  padding-top: 82px;
   width: 280px;
 }
 .advantages__information::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -1px;
+  left: -2px;
   content: "";
   display: block;
   width: 100%;
-  height: 37px;
+  height: 41px;
   //margin-top: -1px;
   background: url(../img/bg-triangle.svg) no-repeat;
   background-size: cover;
@@ -58,19 +58,44 @@
 .advantages__image {
   font-size: 0;
   width: 100%;
-  min-height: 260px;
+  min-height: 259px;
   background: #81b3d2 url("../img/advantages-sity-image.jpg") no-repeat center/cover;
+}
+@media @mobile {
+  .advantages-sity__number--big {
+    margin-bottom: 8px;
+    margin-top: 7px;
+  }
 }
 @media @tablet-widths {
   .advantages__wrapper {
     flex-direction: row;
   }
   .advantages__information {
-    min-width: 156px;
-    padding: 40px 50px;
+    //max-width: 324px;
+    //min-width: 156px;
+    //padding: 40px 50px;
+    padding-top: 45px;
+    padding-bottom: 33px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
   .advantages__information::before {
     display: none;
+  }
+  .advantages-sity__title--big {
+    font-size: 21px;
+  }
+  .advantages-sity__number--big {
+    margin-bottom: 9px;
+    margin-top: 0;
+  }
+  .advantages-sity__about--big {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .advantages__image {
+    min-height: 257px;
   }
 }
 @media @desktop-widths {
@@ -91,5 +116,9 @@
   }
   .advantages-sity__number--big {
     margin-top: -4px;
+  }
+  .advantages-sity__about--big {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }

@@ -13,6 +13,8 @@
   margin: 0 auto;
   padding: 40px 20px;
   width: 280px;
+  padding-top: 40px;
+  padding-bottom: 36px;
 }
 .bridget__title--big {
   margin: 0px;
@@ -46,13 +48,37 @@
   min-height: 260px;
   background: #81b3d2 url("../img/bridge-image.jpg") no-repeat center/cover;
 }
+@media @mobile {
+  .bridge__number--big {
+    margin-top: 6px;
+    margin-bottom: 8px;
+  }
+}
 @media @tablet-widths {
   .bridge__wrapper {
     flex-direction: row-reverse;
   }
   .bridge__information {
     min-width: 156px;
-    padding: 40px 50px;
+    padding-top: 43px;
+    padding-bottom: 38px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .bridget__title--big {
+    font-size: 21px;
+    padding: 0 18px;
+  }
+  .bridge__number--big {
+    margin-bottom: 9px;
+    margin-top: 0;
+  }
+  .bridge__about--big {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bridge__image {
+    min-height: 256px;
   }
 }
 @media @desktop-widths {
