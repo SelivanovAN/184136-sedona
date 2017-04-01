@@ -82,9 +82,11 @@
             </figcaption>
           </figure>
           <figure class="gallery-item">
-            <div class="gallery-item__image">
-              <img class="gallery-item__img" src="img/local_vegetation.jpg" width="280" height="280" alt="Местная растительность">
-            </div>
+            <picture class="gallery-item__image">
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="gallery-item__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
+            </picture>
             <figcaption class="gallery-item__description">
               <div class="gallery-item__description-text">
                 <h3 class="gallery-item__title  gallery-item__title--big">Местная растительность</h3>
@@ -105,9 +107,11 @@
             </figcaption>
           </figure>
           <figure class="gallery-item">
-            <div class="gallery-item__image">
-              <img class="gallery-item__img" src="img/the_road_to_the_north.jpg" width="280" height="280" alt="Дорога на север">
-            </div>
+            <picture class="gallery-item__image">
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="gallery-item__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
+            </picture>
             <figcaption class="gallery-item__description">
               <div class="gallery-item__description-text">
                 <h3 class="gallery-item__title  gallery-item__title--big">Дорога на север</h3>
@@ -128,9 +132,11 @@
             </figcaption>
           </figure>
           <figure class="gallery-item">
-            <div class="gallery-item__image">
-              <img class="gallery-item__img" src="img/devil_s_bridge.jpg" width="280" height="280" alt="Мост дьявола">
-            </div>
+            <picture class="gallery-item__image">
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="gallery-item__img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
+            </picture>
             <figcaption class="gallery-item__description">
               <div class="gallery-item__description-text">
                 <h3 class="gallery-item__title  gallery-item__title--big">Мост дьявола</h3>
@@ -176,13 +182,13 @@
             </button>
             <button class="doubt__full-screan" type="button">
               <svg class="doubt__svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-              <g>
-                <polygon class="doubt__fill" fill="#454545" points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0"/>
-                <polygon class="doubt__fill" fill="#454545" points="3,14 0,14 0,17 0,20 3,20 6,20 6,17 3,17"/>
-                <polygon class="doubt__fill" fill="#454545" points="17,0 14,0 14,3 17,3 17,6 20,6 20,3 20,0"/>
-                <polygon class="doubt__fill"fill="#454545" points="17,17 14,17 14,20 17,20 20,20 20,17 20,14 17,14"/>
-              </g>
-            </svg>
+                <g>
+                  <polygon class="doubt__fill" fill="#454545" points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0"/>
+                  <polygon class="doubt__fill" fill="#454545" points="3,14 0,14 0,17 0,20 3,20 6,20 6,17 3,17"/>
+                  <polygon class="doubt__fill" fill="#454545" points="17,0 14,0 14,3 17,3 17,6 20,6 20,3 20,0"/>
+                  <polygon class="doubt__fill"fill="#454545" points="17,17 14,17 14,20 17,20 20,20 20,17 20,14 17,14"/>
+                </g>
+              </svg>
             </button>
           </div>
         </div>
