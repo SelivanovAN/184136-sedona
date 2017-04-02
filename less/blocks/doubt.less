@@ -13,9 +13,7 @@
 }
 .doubt_title {
   margin: 0;
-  padding-top: 33px;
-  padding: 0 20px;
-  padding-bottom: 28px;
+  padding: 0 20px 28px;
 }
 .doubt_title--big {
   font-family: "PT Sans", sans-serif;
@@ -38,25 +36,47 @@
   color: #333333;
   text-transform: @text-transform;
 }
-.doubt__video-player {
+.doubt__video-player-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 201px;
+  align-items: center;
   padding: 0 20px;
-  //margin-bottom: 140px;
-  background-color: #ffffff;
-  background-image: url(../img/video-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+}
+.doubt__video-player {
+  width: 100%;
+  background: #818f44 url("../img/video-mobile@1x.jpg") no-repeat center/cover;
+
+  @media (max-width: 767px) and (min-resolution: 144dpi),
+  (max-width: 767px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/video-tablet@1x.jpg");
+  }
+
+  @media (min-width: 768px) and (min-resolution: 144dpi),
+  (min-width: 768px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/video-tablet@2x.jpg");
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url("../img/video-desktop@1x.jpg");
+  }
+
+  @media (min-width: 1200px) and (min-resolution: 144dpi),
+  (min-width: 1200px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/video-desktop@2x.jpg");
+  }
 }
 .doubt__remote-layout {
+  position: absolute;
   bottom: 0;
   display: flex;
   margin-top: auto;
   order: 1;
-  width: 100%;
+  width: 90%;
   height: 45px;
   padding: 0 22px;
   background-color: rgba(0, 0, 0, 0.6 );
@@ -157,8 +177,9 @@
 }*/
 @media @mobile {
   .doubt__userbar-layout {
-    position: relative;
+    position: absolute;
     top: 100%;
+    width: 90%;
     height: 66px;
     padding: 0 24px;
     padding-top: 23px;
@@ -168,8 +189,9 @@
   .doubt__fill {
     fill: #5c6870;
   }
-  .doubt__video-player {
+  .doubt__video-player-wrapper {
     margin-bottom: 101px;
+    padding: 0;
   }
 }
 @media @tablet-widths {
@@ -193,8 +215,8 @@
   .doubt_about {
     padding: 0;
   }
-  .doubt__video-player {
-    height: 500px;
+  .doubt__video-player-wrapper {
+    height: 400px;
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 41px;
@@ -206,6 +228,7 @@
   }
   .doubt__remote-layout {
     height: 92px;
+    width: 100%;
     padding: 0;
   }
   .doubt__userbar-layout {
@@ -231,8 +254,8 @@
   .doubt__text-wrap {
     padding-top: 66px;
   }
-  .doubt__video-player {
-    margin-bottom: 86px
+  .doubt__video-player-wrapper {
+    margin-bottom: 86px;
   }
   .doubt__fill {
     fill: #ffffff;
