@@ -23,6 +23,13 @@ module.exports = function(grunt) {
           {expand: true, src: ['./js/**'], dest: './build'}
         ],
       },
+      build: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+        }]
+      },
     },
 
     less: {
@@ -117,14 +124,18 @@ module.exports = function(grunt) {
       },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"]
+      },
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss"]
+        tasks: ["less", "postcss", "csso"]
       }
     }
   });
 
   grunt.registerTask("symbols", ["svgmin", "svgstore"]);
-
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("build", ["clean", "copy", "less", "postcss", "csso", "symbols", "imagemin"]);
 };
