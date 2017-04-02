@@ -11,7 +11,7 @@
   width: 280px;
   max-width: 324px;
   margin-bottom: 37px;
-  padding: 16px 0;
+  padding: 17px 0;
   border: 0;
   align-self: center;
   font-size: 21px;
@@ -34,6 +34,12 @@
   background-color: #e5e5e5;
   color: #ffffff;
 }
+@media @mobile {
+  .information-forms__send {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+}
 @media @tablet-widths {
   .form__wrapper {
     width: auto;
@@ -48,14 +54,19 @@
     margin-bottom: 60px;
     width: 50%;
     max-width: 50%;
+    font-size: 18px;
+    padding-right: 10px;
   }
 }
 @media @desktop-widths {
-  .form__wrapper {
+  .information-forms .form__wrapper {
+    width: auto;
     padding-left: 120px;
     padding-right: 120px;
   }
   .information-forms__send {
     margin-bottom: 65px;
+    font-size: 18px;
+    padding-right: 0;
   }
 }

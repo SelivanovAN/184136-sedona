@@ -40,15 +40,52 @@
   color: #333333;
   text-transform: @text-transform;
 }
+@media @mobile {
+  .excellence-area {
+    min-height: 161px;
+    padding: 0;
+    padding-top: 19px;
+    padding-bottom: 14px;
+  }
+}
 @media @tablet-widths {
   .excellence-area {
-  width: 175px;
-  min-height: 256px;
+    width: 175px;
+    //min-height: 256px;
+    padding: 0;
+    border: none;
+  }
+  .excellence-area__title--big {
+    font-size: 21px;
+  }
+  .excellence-area__number--big {
+    margin-top: 12px;
+  }
+  .excellence-area__about {
+    margin: 0px;
+    margin-top: 22px;
   }
 }
 @media @desktop-widths {
   .excellence-area {
     width: 262px;
-    min-height: 256px;
+    //min-height: 256px;
+    padding: 0;
+    border: none;
+  }
+  .excellence-area--center {
+    margin: 0 auto;
+    width: 120px;
+  }
+  .excellence-area__title--big {
+    font-size: 21px;
+  }
+  .excellence-area__number--big {
+    margin-bottom: 6px;
+    margin-top: -6px;
+  }
+  .excellence-area__about {
+    margin: 0px;
+    margin-bottom: 6px;
   }
 }

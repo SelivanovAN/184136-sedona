@@ -40,15 +40,60 @@
   color: #333333;
   text-transform: @text-transform;
 }
+@media @mobile {
+  .excellence-road {
+    min-height: 163px;
+    padding: 0;
+    padding-top: 23px;
+    padding-bottom: 12px;
+  }
+  .excellence-road__about {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media @tablet-widths {
   .excellence-road {
     width: 175px;
-    min-height: 256px;
+    //min-height: 256px;
+    padding: 0;
+    border: none;
+  }
+  .excellence-road__title--big {
+    font-size: 21px;
+  }
+  .excellence-road__number--big {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  .excellence-road__about {
+    margin: 0px;
+    margin-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media @desktop-widths {
   .excellence-road {
     width: 262px;
-    min-height: 256px;
+    //min-height: 256px;
+    padding: 0;
+    border: none;
+  }
+  .excellence-road--center {
+    margin: 0 auto;
+    width: 120px;
+  }
+  .excellence-road__title--big {
+    font-size: 21px;
+  }
+  .excellence-road__number--big {
+    margin-bottom: 1px;
+    margin-top: -9px;
+  }
+  .excellence-road__about {
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0;
   }
 }

@@ -55,8 +55,10 @@
 }
 .foto-video__image::after {
   position: absolute;
-  bottom: -2px;
-  left: -2px;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   content: "";
   display: block;
   width: 333px;
@@ -65,7 +67,8 @@
   background-size: contain;
 }
 .foto-video__logo-title {
-  margin: auto;
+  margin: 0 auto;
+  height: 40px;
 }
 @media @mobile {
   .foto-video__description {
@@ -73,7 +76,7 @@
   }
   .foto-video__title {
     padding-top: 38px;
-    padding-bottom: 35px;
+    padding-bottom: 26px;
   }
   .foto-video__about {
     padding-bottom: 27px;
@@ -82,31 +85,31 @@
 @media @tablet-widths {
   .foto-video__image {
     min-height: 119px;
-    padding-top: 77px;
-    padding-bottom: 93px;
+    padding-top: 94px;
+    padding-bottom: 77px;
     text-align: center;
   }
   .foto-video__image::after {
     position: absolute;
-    bottom: -4px;
+    bottom: -5px;
     left: 0;
     content: "";
     display: block;
-    width: 768px;
+    width: 100%;
     height: 60px;
     background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
     background-size: 100%;
   }
   .foto-video__logo-title {
-    height: 80px;
+    height: 83px;
     width: 460px;
   }
   .foto-video__wrapper {
   //padding: 0 60px
   }
   .foto-video__title {
-  padding-top: 70px;
-  padding-bottom: 31px;
+  padding-top: 72px;
+  padding-bottom: 30px;
   font-size: 30px;
   line-height: 30px;
   }
@@ -128,10 +131,10 @@
   .foto-video__image::after {
     position: absolute;
     bottom: -4px;
-    left: -1px;
+    left: 0;
     content: "";
     display: block;
-    width: 1201px;
+    width: 100%;
     height: 60px;
     background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
     background-size: 100%;
@@ -141,5 +144,8 @@
   }
   .foto-video__title {
     padding-top: 110px;
+  }
+  .foto-video__about {
+  padding-bottom: 72px;
   }
 }

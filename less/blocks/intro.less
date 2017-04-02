@@ -34,15 +34,34 @@
   text-transform: uppercase;
   text-align: center;
 }
+@media @mobile {
+  .intro__wrapper {
+    padding: 0 22px;
+    padding-top: 41px;
+  }
+  .about--big {
+    padding-top: 29px;
+  }
+}
 @media @tablet-widths {
   .intro__wrapper {
     width: 535px;
-    padding-top:45px;
-    padding-bottom: 55px;
+    padding-top:49px;
+    padding-bottom: 50px;
+  }
+  .intro--big {
+    font-size: 21px;
   }
 }
 @media @desktop-widths {
   .intro__wrapper {
-    width: 535px;
+    padding-top: 52px;
+    padding-bottom: 48px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+  .intro--big {
+    font-size: 22px;
   }
 }

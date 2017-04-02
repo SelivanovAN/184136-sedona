@@ -7,8 +7,8 @@
   flex-direction: column;
   //margin: 0 auto;
   //width: 280px;
-  padding-top: 30px;
-  padding-bottom: 34px;
+  padding-top: 28px;
+  padding-bottom: 36px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -88,6 +88,35 @@
   color: #333333;
   text-transform: @text-transform;
 }
+
+@media @mobile {
+  .comfort__item:nth-child(1) .comfort__house {
+    margin-top: 9px;
+  }
+  .comfort__title--big {
+    font-size: 18px;
+  }
+  .comfort__about {
+    margin-top: 18px;
+    margin-bottom: 30px;
+  }
+  .comfort__house::before {
+    width: 35px;
+    height: 35px;
+    left: 3px;
+  }
+  .comfort__souvenir::before {
+    width: 33px;
+    height: 39px;
+    left: 4px;
+    top: -14px;
+  }
+  .comfort__food::before {
+    width: 36px;
+    height: 34px;
+    top: -6px;
+  }
+}
 @media @tablet-widths {
   .comfort {
     width: 100%;
@@ -99,6 +128,7 @@
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 60px;
+    padding-bottom: 64px;
     //width: 662px;
   }
   .comfort__item {
@@ -112,7 +142,7 @@
   }
   .comfort__about-house,
   .comfort__about-souvenir {
-    padding: 0 36px;
+    padding: 0 45px;
   }
   .comfort__about-good {
     padding: 0 40px;
@@ -120,7 +150,7 @@
   .comfort__house,
   .comfort__souvenir,
   .comfort__food {
-    padding-top: 40px;
+    padding-top: 31px;
   }
   .comfort__item .comfort__house::before,
   .comfort__item .comfort__food::before,
@@ -154,11 +184,14 @@
     padding: 60px 0 85px;
     width: 100%;
     margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 84px;
   }
   .comfort .comfort__item {
     width: 33%;
     text-align: center;
     margin-right: 0;
+    padding-top: 61px;
   }
   .comfort__about-house,
   .comfort__about-souvenir,
@@ -167,9 +200,11 @@
   }
   .comfort__about {
     margin-bottom: 0;
+    margin-top: 24px;
   }
-  .comfort__wrapper {
-    padding-top: 60px;
-    margin-bottom: 85px;
+  .comfort__house,
+  .comfort__souvenir,
+  .comfort__food {
+    padding-top: 40px;
   }
 }
