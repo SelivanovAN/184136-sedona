@@ -86,12 +86,12 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
-          server: ".",
+          server: "build/",
           watchTask: true,
           notify: false,
           open: true,
