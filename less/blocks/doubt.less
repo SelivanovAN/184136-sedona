@@ -76,11 +76,13 @@
   display: flex;
   margin-top: auto;
   order: 1;
-  width: 90%;
+  width: 88%;
   height: 45px;
   padding: 0 22px;
   background-color: rgba(0, 0, 0, 0.6 );
   box-sizing: border-box;
+  left: 20px;
+  right: 20px;
 }
 .doubt__remote-line {
   position: relative;
@@ -101,6 +103,8 @@
 .doubt__userbar-layout {
   display: flex;
   justify-content: space-between;
+  left: 20px;
+  right: 20px;
 }
 .doubt__svg {
   background: none;
@@ -115,16 +119,6 @@
   font-size: 0;
   cursor: pointer;
 }
-/*
-.doubt__replay {
-  padding: 0;
-  border: 0;
-  width: 16px;
-  height: 20px;
-  font-size: 0;
-  background-color: transparent;
-  background-image: url(../img/icon-video-replay.svg);
-}*/
 .doubt__subtitle {
   padding: 0px;
   border: none;
@@ -136,17 +130,6 @@
   background-color: transparent;
   cursor: pointer;
 }
-/*.doubt__subtitle {
-  padding: 0;
-  border: 0;
-  margin-right: 31px;
-  margin-left: auto;
-  width: 32px;
-  height: 20px;
-  font-size: 0;
-  background-color: transparent;
-  background-image: url(../img/icon-video-subtitles.svg);
-}*/
 .doubt__full-screan {
   padding: 0;
   border: none;
@@ -166,20 +149,11 @@
 .doubt__full-screan:active .doubt__fill {
   fill: #c1c1c1;
 }
-/*.doubt__full-screan {
-  padding: 0;
-  border: 0;
-  width: 20px;
-  height: 20px;
-  font-size: 0;
-  background-color: transparent;
-  background-image: url(../img/icon-video-fullscreen.svg);
-}*/
 @media @mobile {
   .doubt__userbar-layout {
     position: absolute;
     top: 100%;
-    width: 90%;
+    width: 88%;
     height: 66px;
     padding: 0 24px;
     padding-top: 23px;
@@ -192,6 +166,9 @@
   .doubt__video-player-wrapper {
     margin-bottom: 101px;
     padding: 0;
+  }
+  .doubt__video-player {
+    min-height: 200px;
   }
 }
 @media @tablet-widths {
@@ -216,11 +193,14 @@
     padding: 0;
   }
   .doubt__video-player-wrapper {
-    height: 400px;
+    height: 500px;
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 41px;
     padding: 0;
+  }
+  .doubt__video-player {
+    min-height: 500px;
   }
   .doubt__remote-line {
     margin-left: 14%;
@@ -230,6 +210,7 @@
     height: 92px;
     width: 100%;
     padding: 0;
+    left: 0;
   }
   .doubt__userbar-layout {
     position: absolute;
@@ -238,6 +219,7 @@
     padding-right: 41px;
     padding-left: 35px;
     box-sizing: border-box;
+    left: 0;
   }
   .doubt__fill {
     fill: #ffffff;
@@ -256,6 +238,10 @@
   }
   .doubt__video-player-wrapper {
     margin-bottom: 86px;
+    height: 500px;
+  }
+  .doubt__video-player {
+    min-height: 500px;
   }
   .doubt__fill {
     fill: #ffffff;

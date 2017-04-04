@@ -96,33 +96,47 @@
     padding-bottom: 0;
   }
   .information-form-visited__legend {
+    position: relative;
     width: 280px;
     //padding-left: 60px;
-    padding-right: 120px;
+    padding-right: 185px;
+    padding-left: 185px;
     padding-bottom: 58px;
     font-size: 21px;
     align-self: center;
     background-color: #ffffff;
     &::before {
-      content: "";
       position: absolute;
-      z-index: -1;
+      top: 24%;
       left: 0;
-      right: 0;
-      top: 43px;
+      content: "";
+      display: block;
+      width: 125px;
       height: 1px;
       background-color: #dbdbdb;
+      z-index: 5;
+    }
+    &::after {
+      position: absolute;
+      top: 24%;
+      right: 0;
+      content: "";
+      display: block;
+      width: 125px;
+      height: 1px;
+      background-color: #dbdbdb;
+      z-index: 5;
     }
   }
   .information-form-visited__label {
     margin-bottom: 62px;
     margin-left: 31px;
-    padding-left: 19px;
+    padding-left: 14px;
   }
   .information-form-visited__label::before {
     content: "";
     position: absolute;
-    left: -62px;
+    left: -66px;
     top: -14px;
     width: 56px;
     height: 56px;
@@ -133,7 +147,7 @@
     content: "";
     position: absolute;
     top: 6px;
-    left: -43px;
+    left: -48px;
     width: 24px;
     height: 16px;
     background-image: url(../img/icon-tick.svg);
@@ -146,7 +160,7 @@
     display: flex;
     flex-direction: column;
     height: 180px;
-    align-content: center;
+    align-content: flex-end;
     flex-wrap: wrap;
   }
   .information-form-visited__label {
@@ -155,13 +169,36 @@
 }
 @media @desktop-widths {
   .information-form-visited__wrapper {
-    padding-bottom: 3px;
-    padding-top: 15px;
+    padding-bottom: 1px;
+    padding-top: 17px;
   }
   .information-form-visited__legend {
-    padding-bottom: 55px;
-    padding-left: 60px;
-    padding-right: 60px;
+    position: relative;
+    padding-bottom: 58px;
+    padding-left: 340px;
+    padding-right: 340px;
+    &::before {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      content: "";
+      display: block;
+      width: 280px;
+      height: 1px;
+      background-color: #dbdbdb;
+      z-index: 5;
+    }
+    &::after {
+      position: absolute;
+      top: 25%;
+      right: 0px;
+      content: "";
+      display: block;
+      width: 280px;
+      height: 1px;
+      background-color: #dbdbdb;
+      z-index: 5;
+    }
   }
   .information-form-visited__form-checkbox-wrapper {
     flex-direction: row;
@@ -173,6 +210,7 @@
     margin-left: 0;
     width: 205px;
     padding-left: 80px;
+    margin-bottom: 62px;
   }
   .information-form-visited__label::before {
     content: "";

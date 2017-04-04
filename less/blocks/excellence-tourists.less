@@ -1,7 +1,6 @@
 .excellence-tourists {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   background-color: #eeeeee;
   width: 280px;
   min-height: 168px;
@@ -27,6 +26,8 @@
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+  margin-top: 7px;
+  margin-bottom: 11px;
 }
 .excellence-tourists__about {
   margin: 0px;
@@ -34,16 +35,16 @@
 .excellence-tourists__about--big {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 23px;
   font-weight: 400;
   color: #333333;
   text-transform: @text-transform;
 }
 @media @mobile {
   .excellence-tourists {
-    min-height: 163px;
+    min-height: 167px;
     padding: 0;
-    padding-top: 23px;
+    padding-top: 26px;
     padding-bottom: 12px;
   }
   .excellence-tourists__about {
@@ -54,12 +55,13 @@
 @media @tablet-widths {
   .excellence-tourists {
     width: 175px;
-    //min-height: 256px;
     padding: 0;
     border: none;
   }
   .excellence-tourists__title--big {
     font-size: 21px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .excellence-tourists__number--big {
     margin-bottom: 0px;
@@ -69,15 +71,17 @@
   }
   .excellence-tourists__about {
     margin: 0px;
-    margin-top: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-top: 18px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .excellence-tourists__about--big {
+    line-height: 21px;
   }
 }
 @media @desktop-widths {
   .excellence-tourists {
     width: 262px;
-    //min-height: 256px;
     padding: 0;
     border: none;
   }
@@ -87,15 +91,22 @@
   }
   .excellence-tourists__title--big {
     font-size: 21px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 3px;
 
   }
   .excellence-tourists__number--big {
-    margin-bottom: 1px;
-    margin-top: -9px;
+    margin-bottom: 18px;
+    margin-top: 9px;
   }
   .excellence-tourists__about {
     margin: 0px;
     margin-top: 0px;
     padding: 0;
+  }
+  .excellence-tourists__about--big {
+    line-height: 22px;
+    margin-bottom: 4px;
   }
 }

@@ -1,7 +1,6 @@
 .excellence-road {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   background-color: #eeeeee;
   width: 280px;
   min-height: 168px;
@@ -28,6 +27,8 @@
   line-height: 26px;
   font-weight: 400;
   color: #333333;
+  margin-bottom: 11px;
+  margin-top: 7px;
 }
 .excellence-road__about {
   margin: 0px;
@@ -35,16 +36,16 @@
 .excellence-road__about--big {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 23px;
   font-weight: 400;
   color: #333333;
   text-transform: @text-transform;
 }
 @media @mobile {
   .excellence-road {
-    min-height: 163px;
+    min-height: 169px;
     padding: 0;
-    padding-top: 23px;
+    padding-top: 27px;
     padding-bottom: 12px;
   }
   .excellence-road__about {
@@ -55,7 +56,6 @@
 @media @tablet-widths {
   .excellence-road {
     width: 175px;
-    //min-height: 256px;
     padding: 0;
     border: none;
   }
@@ -63,20 +63,22 @@
     font-size: 21px;
   }
   .excellence-road__number--big {
-    margin-bottom: 0px;
-    margin-top: 10px;
+    margin-bottom: 6px;
+    margin-top: 9px;
   }
   .excellence-road__about {
     margin: 0px;
-    margin-top: 12px;
+    margin-top: 14px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .excellence-road__about--big {
+    line-height: 20px;
   }
 }
 @media @desktop-widths {
   .excellence-road {
     width: 262px;
-    //min-height: 256px;
     padding: 0;
     border: none;
   }
@@ -86,14 +88,21 @@
   }
   .excellence-road__title--big {
     font-size: 21px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 2px;
   }
   .excellence-road__number--big {
-    margin-bottom: 1px;
-    margin-top: -9px;
+    margin-bottom: 17px;
+    margin-top: 11px;
   }
   .excellence-road__about {
     margin: 0px;
     margin-top: 0px;
     padding: 0;
+  }
+  .excellence-road__about--big {
+    line-height: 23px;
+    margin-bottom: 4px;
   }
 }

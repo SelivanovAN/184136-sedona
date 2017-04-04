@@ -18,10 +18,10 @@
               </svg>
             </button>
             <ul class="main-nav__items">
-              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block  main-nav__item-link--active">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="./photo.html">Фото и видео</a></li>
-              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="./form.html">Форма отзыва</a></li>
-              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="https://htmlacademy.ru/">html academy</a></li>
+              <li class="main-nav__item"><a class="main-nav__link  main-nav__item-link--active">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./photo.html">Фото и видео</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./form.html">Форма отзыва</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a></li>
               <li class="main-nav__item  main-nav__item--logo  main-nav__item--center">
                 <button class="main-nav__toogle" type="button">Открыть меню
                   <svg version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
@@ -65,22 +65,27 @@
             <span class="advantages-sity__number  advantages-sity__number--big">&mdash; №1 &mdash;</span>
             <p class="advantages-sity__about  advantages-sity__about--big">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="advantages__image">Город</div>
+          <div class="advantages__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img class="advantages__image--size" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Picture">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="comfort">
         <div class="comfort__wrapper">
           <div class="comfort__item">
-            <!--<svg class="comfort__item-icon comfort__item-icon--house" width="39" height="37"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-house"></use></svg>-->
-            <h2 class="comfort__house  comfort__title  comfort__title--big  comfort__svg--center">Жилье</h2>
+            <h2 class="comfort__house  comfort__title  comfort__title--big">Жилье</h2>
             <p class="comfort__about  comfort__about-house  comfort__about--big">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="comfort__item">
-            <h2 class="comfort__souvenir  comfort__title  comfort__title--big  comfort__svg--center">Сувениры</h2>
+            <h2 class="comfort__souvenir  comfort__title  comfort__title--big">Сувениры</h2>
             <p class="comfort__about  comfort__about-souvenir  comfort__about--big">Не только китайского,<br> но и местного производства!</p>
           </div>
           <div class="comfort__item">
-            <h2 class="comfort__food  comfort__title  comfort__title--big  comfort__svg--center">Еда</h2>
+            <h2 class="comfort__food  comfort__title  comfort__title--big">Еда</h2>
             <p class="comfort__about  comfort__about-good  comfort__about--big">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
         </div>
@@ -92,23 +97,29 @@
             <span class="bridge__number  bridge__number--big">&mdash; №2 &mdash;</span>
             <p class="bridge__about  bridge__about--big">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
           </div>
-          <div class="bridge__image">Мост дьявола</div>
+          <div class="bridge__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="bridge__image--size" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Picture">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="excellence">
         <div class="excellence__wrapper">
           <div class="excellence-area">
-            <h2 class="excellence-area__title  excellence-area--center  excellence-area__title--big">Небольшая площадь</h2>
+            <h2 class="excellence-area__title  excellence-area__title--big">Небольшая площадь</h2>
             <span class="excellence-area__number  excellence-area__number--big">&mdash; №3 &mdash;</span>
             <p class="excellence-area__about  excellence-area__about--big">Все достопримеча-<br>тельности находятся очень близко</p>
           </div>
           <div class="excellence-road">
-            <h2 class="excellence-road__title  excellence-road--center  excellence-road__title--big">Красивая дорога</h2>
+            <h2 class="excellence-road__title  excellence-road__title--big">Красивая дорога</h2>
             <span class="excellence-road__number  excellence-road__number--big">&mdash; №4 &mdash;</span>
             <p class="excellence-road__about  excellence-road__about--big">Ехать в седону из лас-вегаса совсем не скучно!</p>
           </div>
           <div class="excellence-tourists">
-            <h2 class="excellence-tourists__title  excellence-tourists--center  excellence-tourists__title--big">Мало туристов</h2>
+            <h2 class="excellence-tourists__title  excellence-tourists__title--big">Мало туристов</h2>
             <span class="excellence-tourists__number  excellence-tourists__number--big">&mdash; №5 &mdash;</span>
             <p class="excellence-tourists__about  excellence-tourists__about--big">Большинство едет в гранд каньон и толпится там</p>
           </div>
@@ -118,7 +129,7 @@
         <div class="interest__wrapper  interest__words">
           <h2 class="interest__title  interest__title--big">Заинтересовались?</h2>
           <p class="interest__about  interest__about--big">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a href="find.html" class="interest__searchhost  interest__searchhost--big">Найти гостиницу</a>
+          <a class="interest__searchhost  interest__searchhost--big" href="find.html">Найти гостиницу</a>
         </div>
       </section>
       <section class="map">
@@ -128,7 +139,7 @@
       </section>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <a class="page-footer__visitsedona page-footer__visitsedona--big" href="#">#Visitsedona</a>
+          <a class="page-footer__visitsedona  page-footer__visitsedona--big" href="#">#Visitsedona</a>
           <section class="page-footer__social social-links">
             <a class="social-link  social-link--tw" href="https://twitter.com/">Твиттер</a>
             <a class="social-link  social-link--fb" href="https://facebook.com">Фейсбук</a>
