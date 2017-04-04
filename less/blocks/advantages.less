@@ -59,7 +59,11 @@
   font-size: 0;
   width: 100%;
   min-height: 259px;
-  background: #81b3d2 url("../img/advantages-sity-image.jpg") no-repeat center/cover;
+  //background: #81b3d2 url("../img/advantages-sity-image.jpg") no-repeat center/cover;
+}
+.advantages__image--size {
+  width: 100%;
+  max-height: 259px;
 }
 @media @mobile {
   .advantages-sity__number--big {
@@ -72,11 +76,8 @@
     flex-direction: row;
   }
   .advantages__information {
-    //max-width: 324px;
-    //min-width: 156px;
-    //padding: 40px 50px;
     padding-top: 45px;
-    padding-bottom: 33px;
+    padding-bottom: 44px;
     padding-left: 35px;
     padding-right: 35px;
   }
@@ -87,12 +88,13 @@
     font-size: 21px;
   }
   .advantages-sity__number--big {
-    margin-bottom: 9px;
-    margin-top: 0;
+    margin-bottom: 2px;
+    margin-top: -8px;
   }
   .advantages-sity__about--big {
     padding-left: 10px;
     padding-right: 10px;
+    line-height: 22px;
   }
   .advantages__image {
     min-height: 257px;
@@ -115,10 +117,11 @@
     margin: 0 auto;
   }
   .advantages-sity__number--big {
-    margin-top: -4px;
+    margin-top: -1px;
   }
   .advantages-sity__about--big {
     padding-left: 0px;
     padding-right: 0px;
+    line-height: 25px;
   }
 }

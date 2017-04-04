@@ -73,7 +73,7 @@
   }
   .information-form-emotions__wrapper {
     width: auto;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
     &::before {
       content: "* – обязательные поля";
       position: absolute;
@@ -90,7 +90,7 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
     font-size: 21px;
     align-self: center;
     background-color: #ffffff;
@@ -119,7 +119,20 @@
 }
 @media @desktop-widths {
   .information-form-emotions__wrapper {
-    padding-bottom: 58px;
+    padding-bottom: 59px;
+  }
+  .information-form-emotions__wrapper {
+    &::before {
+      content: "* – обязательные поля";
+      position: absolute;
+      bottom: -44px;;
+      right: 2px;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: bold;
+      color: #333333;
+      text-transform: uppercase;
+    }
   }
   .information-form-emotions__legend {
     width: 100%;

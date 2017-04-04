@@ -18,10 +18,10 @@
               </svg>
             </button>
             <ul class="main-nav__items">
-              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="./index.html">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="./photo.html">Фото и видео</a></li>
-              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block  main-nav__item-link--active">Форма отзыва</a></li>
-              <li class="main-nav__item"><a class="main-nav__link  main-nav__link--block" href="https://htmlacademy.ru/">html academy</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="./photo.html">Фото и видео</a></li>
+              <li class="main-nav__item"><a class="main-nav__link  main-nav__item-link--active">Форма отзыва</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a></li>
               <li class="main-nav__item  main-nav__item--logo  main-nav__item--center">
                 <button class="main-nav__toogle" type="button">Открыть меню
                   <svg version="1.0" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
@@ -62,16 +62,13 @@
           <div class="information-form-introduce__wrapper">
             <h2 class="information-form-introduce__title  information-form-introduce__title--big">Представьтесь:</h2>
             <div class="information-form-introduce__label-wrapper">
-              <label class="information-form-introduce__label  information-form-introduce__label--big">
-                <span class="information-form-introduce__label-text">Имя*:</span>
+              <label class="information-form-introduce__label  information-form-introduce__label-text  information-form-introduce__label--big">Имя*:
                 <input class="information-form-introduce__input  information-form-introduce__input--background" type="text" name="name" placeholder="Петр">
               </label>
-              <label class="information-form-introduce__label  information-form-introduce__label--big">
-                <span class="information-form-introduce__label-text">Фамилия*:</span>
+              <label class="information-form-introduce__label  information-form-introduce__label-text  information-form-introduce__label--big">Фамилия*:
                 <input class="information-form-introduce__input  information-form-introduce__input--background" type="text" name="surname" placeholder="Иванов">
               </label>
-              <label class="information-form-introduce__label  information-form-introduce__label--big">
-                <span class="information-form-introduce__label-text">Отчество:</span>
+              <label class="information-form-introduce__label  information-form-introduce__label-text  information-form-introduce__label--big">Отчество:
                 <input class="information-form-introduce__input  information-form-introduce__input--background" type="text" name="patronymic" placeholder="Александрович">
               </label>
             </div>
@@ -83,11 +80,11 @@
             <div class="information-form-contact__label-wrapper">
               <label class="information-form-contact__label  information-form-contact__label-tel  information-form-contact__label--big">
                 <span class="information-form-contact__label-contact"><span class="information-form-contact__label-contact-hidden">Контактный</span> телефон*:</span>
-                <input class="information-form-contact__input information-form-contact__input--background" type="text" name="tel" placeholder="Введите телефон">
+                <input class="information-form-contact__input  information-form-contact__input--background" type="text" name="tel" placeholder="Введите телефон">
               </label>
               <label class="information-form-contact__label  information-form-contact__label-email  information-form-contact__label--big">
                 <span class="information-form-contact__label-contact">Электронная почта*:</span>
-                <input class="information-form-contact__input information-form-contact__input--background" type="email" name="email" placeholder="Введите e-mail">
+                <input class="information-form-contact__input  information-form-contact__input--background" type="email" name="email" placeholder="Введите e-mail">
               </label>
             </div>
           </div>
@@ -97,17 +94,11 @@
             <h2 class="information-form-impression__legend  information-form-impression__legend--big">Ваше общее впечатление:</h2>
             <div class="information-form-impression__label-wrapper">
               <input class="information-form-impression__radio  information-form-impression__radio--none" type="radio" name="impression" id="good" checked>
-              <label class="information-form-impression__label  information-form-impression__label--thick" for="good">
-                <span class="information-form-impression__label-text">Скорее положительное</span>
-              </label>
+              <label class="information-form-impression__label  information-form-impression__label-text  information-form-impression__label--thick" for="good">Скорее положительное</label>
               <input class="information-form-impression__radio  information-form-impression__radio--none" type="radio" name="impression" id="bad">
-              <label class="information-form-impression__label  information-form-impression__label--thick" for="bad">
-                <span class="information-form-impression__label-text">Скорее отрицательное</span>
-              </label>
+              <label class="information-form-impression__label  information-form-impression__label-text  information-form-impression__label--thick" for="bad">Скорее отрицательное</label>
               <input class="information-form-impression__radio  information-form-impression__radio--none" type="radio" name="impression" id="50">
-                <label class="information-form-impression__label  information-form-impression__label--thick" for="50">
-                <span class="information-form-impression__label-text">Затрудняюсь ответить</span>
-              </label>
+              <label class="information-form-impression__label  information-form-impression__label-text  information-form-impression__label--thick" for="50">Затрудняюсь ответить</label>
             </div>
           </div>
         </div>
@@ -116,21 +107,13 @@
             <h2 class="information-form-visited__legend  information-form-visited__legend--big">Посещенные достопримечательности:</h2>
             <div class="information-form-visited__form-checkbox-wrapper">
               <input class="information-form-visited__checkbox  information-form-visited__checkbox--none" type="checkbox" name="visited" id="bridge" checked>
-              <label class="information-form-visited__label  information-form-visited__label--thick" for="bridge">
-                <span class="information-form-visited__label-text">Мост Дьявола</span>
-              </label>
+              <label class="information-form-visited__label  information-form-visited__label-text  information-form-visited__label--thick" for="bridge">Мост Дьявола</label>
               <input class="information-form-visited__checkbox  information-form-visited__checkbox--none" type="checkbox" name="visited" id="park" checked>
-              <label class="information-form-visited__label  information-form-visited__label--thick" for="park">
-                <span class="information-form-visited__label-text">Слайд-парк</span>
-              </label>
+              <label class="information-form-visited__label  information-form-visited__label-text  information-form-visited__label--thick" for="park">Слайд-парк</label>
               <input class="information-form-visited__checkbox  information-form-visited__checkbox--none" type="checkbox" name="visited" id="hill">
-              <label class="information-form-visited__label  information-form-visited__label--thick" for="hill">
-                <span class="information-form-visited__label-text">Гора-Колокол</span>
-              </label>
+              <label class="information-form-visited__label  information-form-visited__label-text  information-form-visited__label--thick" for="hill">Гора-Колокол</label>
               <input class="information-form-visited__checkbox  information-form-visited__checkbox--none" type="checkbox" name="visited" id="rock" checked>
-              <label class="information-form-visited__label  information-form-visited__label--thick" for="rock">
-                <span class="information-form-visited__label-text">Красные скалы</span>
-              </label>
+              <label class="information-form-visited__label  information-form-visited__label-text  information-form-visited__label--thick" for="rock">Красные скалы</label>
             </div>
           </div>
         </div>
@@ -140,13 +123,13 @@
             <textarea class="information-form-emotions__textarea  information-form-emotions__textarea--font" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </div>
-        <button class="information-forms__send  information-forms__send--big information-forms__jssend" type="submit" value="Отправить отзыв">Отправить отзыв</button>
+        <button class="information-forms__send  information-forms__send--big  information-forms__jssend" type="submit" value="Отправить отзыв">Отправить отзыв</button>
       </div>
     </form>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__visitsedona page-footer__visitsedona--big" href="#">#Visitsedona</a>
-        <section class="page-footer__social social-links">
+        <a class="page-footer__visitsedona  page-footer__visitsedona--big" href="#">#Visitsedona</a>
+        <section class="page-footer__social  social-links">
           <a class="social-link  social-link--tw" href="https://twitter.com/">Твиттер</a>
           <a class="social-link  social-link--fb" href="https://facebook.com">Фейсбук</a>
           <a class="social-link  social-link--yb" href="https://www.youtube.com/">Ютуб</a>
