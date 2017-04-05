@@ -2,7 +2,8 @@
   background-color: #ffffff;
 }
 .comment__wrapper {
-  .container();
+  //.container();
+  //width: 100%;
 }
 .comment__description {
   display: flex;
@@ -69,7 +70,7 @@
   margin: 0 auto;
   content: "";
   display: block;
-  width: 100%;
+  width: 333px;
   height: 28px;
   background: url(../img/bg-intro-triangle-mobile.svg) no-repeat;
   background-size: contain;
@@ -100,16 +101,12 @@
   }
 }
 @media @tablet-widths {
-  //.comment__image {
-  //  height: 518px;
-  //}
   .comment__logo-title {
     height: 80px;
     width: 460px;
     margin: 0 auto;
   }
   .comment__wrapper {
-    padding: 0;
     width: auto;
   }
   .comment__title {
@@ -138,15 +135,8 @@
     background: url(../img/bg-intro-triangle-tablet.svg) no-repeat;
     background-size: contain;
   }
-  //.comment .comment__image {
-  //  height: 158px;
-  //  height: 301px;
-//  }
 }
 @media @desktop-widths {
-  //.comment .comment__image {
-    //height: 290px;
-  //}
   .comment__image {
     min-height: 105px;
     padding-top: 102px;
@@ -154,8 +144,8 @@
     text-align: center;
   }
   .comment__wrapper {
-  padding: 0;
-  width: auto;
+    padding: 0;
+    width: auto;
   }
   .comment__title {
     padding-top: 111px;
