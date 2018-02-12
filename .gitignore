@@ -5,7 +5,7 @@
 *.pdf
 *.psd
 *.sublime*
-css/*.css
 node_modules/
-build/
+npm-debug.*
+source/css/*.css
 Thumbs.db

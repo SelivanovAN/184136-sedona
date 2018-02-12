@@ -1,38 +1,40 @@
 {
   "name": "sedona",
-  "version": "0.1.0",
+  "version": "13.0.0",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Личный проект Седона от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
-    "autoprefixer": "6.7.x",
-    "css-mqpacker": "^5.0.1",
-    "grunt": "^1.0.1",
-    "grunt-browser-sync": "2.2.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-imagemin": "^1.0.1",
-    "grunt-contrib-less": "1.4.0",
-    "grunt-contrib-watch": "1.0.0",
-    "grunt-csso": "^2.2.0",
-    "grunt-postcss": "0.8.0",
-    "grunt-svgmin": "^4.0.0",
-    "grunt-svgstore": "^1.0.0"
+    "autoprefixer": "7.2.x",
+    "grunt": "1.0.x",
+    "grunt-browser-sync": "2.2.x",
+    "grunt-contrib-less": "1.4.x",
+    "grunt-contrib-watch": "1.0.x",
+    "grunt-postcss": "0.9.x",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "stylelint": "8.4.x",
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
-    "test": "editorconfig-cli",
-    "start": "npm run build && grunt serve",
-    "build": "grunt build"
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint 'source/less/**/*.less' --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "grunt less && grunt postcss",
+    "start": "npm run build && grunt serve"
   },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "editorconfig-cli": [
-    "*.html",
     "*.json",
     "*.js",
-    "js/**/*.js",
-    "img/**/*.svg",
-    "less/**/*.less"
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/less/**/*.less"
   ],
   "engines": {
-    "node": "6.10"
+    "node": "8.9"
   }
 }
